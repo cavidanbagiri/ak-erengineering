@@ -1,0 +1,211 @@
+{
+    "en": {
+        "about": {
+            "title": "About Us",
+            "subtitle": "We make a difference in the lighting industry with our vision and mission",
+            "companyName": "Lineo Lighting",
+            "yearsOfExperience": "20+ Years of Experience",
+            "description1": "Since 2003, our company has been operating in the lighting sector and has signed Turkey's largest lighting projects.",
+            "description2": "With our expert engineering team and state-of-the-art equipment, we aim to provide the highest quality service to our customers.",
+            "certifications": {
+                "iso": "ISO 9001",
+                "ce": "CE Certificate",
+                "rohs": "RoHS Compliant"
+            },
+            "whyChooseUs": "Why Choose Us?",
+            "benefits": [
+                {
+                    "title": "Energy Efficiency",
+                    "description": "Energy-saving solutions with high-efficiency LED technologies"
+                },
+                {
+                    "title": "Eco-Friendly",
+                    "description": "Sustainable and environmentally sensitive lighting systems"
+                },
+                {
+                    "title": "7/24 Technical Support",
+                    "description": "Uninterrupted technical support and maintenance services"
+                },
+                {
+                    "title": "International Standards",
+                    "description": "ISO, CE, RoHS international quality certificates"
+                },
+                {
+                    "title": "Customized Solutions",
+                    "description": "Project-specific design and engineering services"
+                }
+            ],
+            "statistics": {
+                "projects": "Completed Projects",
+                "projectsLocation": "Across Turkey",
+                "experience": "Years of Experience",
+                "experienceSub": "Industry leader",
+                "experts": "Expert Staff",
+                "expertsSub": "Engineers and technicians"
+            },
+            "mission": {
+                "title": "Our Mission",
+                "description": "To maintain customer satisfaction at the highest level with sustainable, innovative and aesthetic lighting solutions, contribute to energy efficiency and be a pioneer in the industry."
+            },
+            "vision": {
+                "title": "Our Vision",
+                "description": "To become a global brand that is referenced in smart lighting systems in Turkey and the world, combining technology and design, producing sustainable solutions."
+            }
+        },
+        "carousel": {
+            "slides": [
+                {
+                    "title": "In",
+                    "highlightedText": "Innovative Solutions",
+                    "description": "With over 20 years of experience, as Turkey's leading lighting engineering company, we offer energy-efficient, environmentally friendly and aesthetic lighting solutions."
+                },
+                {
+                    "title": "Electrical Contracting",
+                    "highlightedText": "Professional Services",
+                    "description": "We strengthen your space with modern systems and are with you at every stage from design to implementation."
+                },
+                {
+                    "title": "Smart Lighting",
+                    "highlightedText": "Automation Systems",
+                    "description": "We increase energy efficiency and maximize user comfort with advanced automation systems such as DALI, DMX, KNX."
+                }
+            ],
+            "buttons": {
+                "explore": "Explore",
+                "contact": "Contact"
+            },
+            "ariaLabels": {
+                "previousSlide": "Previous slide",
+                "nextSlide": "Next slide",
+                "goToSlide": "Go to slide {{index}}"
+            }
+        },
+        "contact": {
+            "sectionHeader": {
+                "title": "Contact",
+                "heading": "Get in Touch",
+                "subtitle": "Request a free discovery and quote for your projects"
+            },
+            "contactInfo": {
+                "phone": {
+                    "title": "Phone",
+                    "hours": "Weekdays 09:00 - 18:00"
+                },
+                "email": {
+                    "title": "Email",
+                    "response": "Response within 24 hours"
+                },
+                "address": {
+                    "title": "Address",
+                    "visit": "Visit by appointment"
+                }
+            },
+            "form": {
+                "name": {
+                    "label": "Your Full Name *",
+                    "placeholder": "Ahmet Yılmaz"
+                },
+                "email": {
+                    "label": "Your Email Address *",
+                    "placeholder": "info@example.com"
+                },
+                "phone": {
+                    "label": "Your Phone Number",
+                    "placeholder": "+90 555 123 45 67"
+                },
+                "subject": {
+                    "label": "Project Subject *",
+                    "placeholder": "Lighting Project"
+                },
+                "message": {
+                    "label": "Project Details *",
+                    "placeholder": "Provide detailed information about your project..."
+                },
+                "submitButton": {
+                    "default": "Send",
+                    "submitting": "Sending..."
+                },
+                "successMessage": "Your message has been sent successfully! We will get back to you as soon as possible."
+            }
+        },
+        "footer": {
+            "companyInfo": {
+                "brandName": "Lineo",
+                "brandSuffix": "Lighting",
+                "description": "We are one of Turkey's leading companies offering innovative solutions in lighting engineering. With our 20+ years of experience, we offer quality and reliability together."
+            },
+            "quickLinks": {
+                "title": "Quick Links",
+                "links": {
+                    "home": "Home",
+                    "services": "Services",
+                    "projects": "Projects",
+                    "about": "About Us",
+                    "contact": "Contact"
+                }
+            },
+            "services": {
+                "title": "Our Services",
+                "list": [
+                    "Facade Lighting",
+                    "Industrial Lighting",
+                    "Landscape Lighting",
+                    "Road Lighting",
+                    "Energy Solutions",
+                    "Smart Systems"
+                ]
+            },
+            "contact": {
+                "title": "Contact Us",
+                "address": "Istanbul, Turkey",
+                "phone": "+90 (212) 123 45 67",
+                "email": "info@lineo.com.tr",
+                "hours": "Mon - Fri: 09:00 - 18:00"
+            },
+            "newsletter": {
+                "title": "Subscribe to Our Newsletter",
+                "placeholder": "Your email address",
+                "button": "Subscribe",
+                "successMessage": "✓ Successfully subscribed!"
+            },
+            "bottom": {
+                "copyright": "© {{year}} Lineo Lighting Engineering. All rights reserved.",
+                "privacyPolicy": "Privacy Policy",
+                "termsOfUse": "Terms of Use",
+                "cookiePolicy": "Cookie Policy"
+            },
+            "backToTop": {
+                "ariaLabel": "Back to top"
+            }
+        },
+        "navbar": {
+            "logo": "Lineo",
+            "brandSuffix": "Lighting",
+            "navItems": {
+                "home": "Home",
+                "about": "About Us",
+                "services": "Services",
+                "portfolio": "Projects",
+                "contact": "Contact"
+            },
+            "dropdown": {
+                "facade": "Facade Lighting",
+                "industrial": "Industrial Lighting",
+                "landscape": "Landscape Lighting",
+                "smart": "Smart Systems"
+            },
+            "buttons": {
+                "getQuote": "Get Quote"
+            },
+            "mobileMenu": {
+                "contactInfo": {
+                    "phone": "+90 (212) 123 45 67",
+                    "email": "info@lineo.com.tr"
+                }
+            },
+            "ariaLabels": {
+                "toggleMenu": "Toggle menu"
+            }
+        }
+    }
+}

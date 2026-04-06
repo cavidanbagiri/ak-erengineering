@@ -1,0 +1,211 @@
+{
+    "az": {
+        "about": {
+            "title": "Haqqımızda",
+            "subtitle": "Vizyonumuz və missiyamız ilə işıqlandırma sektorunda fərq yaradırıq",
+            "companyName": "Lineo İşıqlandırma",
+            "yearsOfExperience": "20+ İllik Təcrübə",
+            "description1": "2003-cü ildən bəri işıqlandırma sektorunda fəaliyyət göstərən şirkətimiz, Türkiyənin ən böyük işıqlandırma layihələrinə imza atmışdır.",
+            "description2": "Mütəxəssis mühəndis kadromuz və son texnologiya avadanlıqlarımızla, müştərilərimizə ən keyfiyyətli xidməti təqdim etməyi hədəfləyirik.",
+            "certifications": {
+                "iso": "ISO 9001",
+                "ce": "CE Sertifikatı",
+                "rohs": "RoHS Uyumlu"
+            },
+            "whyChooseUs": "Niyə Bizi Seçməlisiniz?",
+            "benefits": [
+                {
+                    "title": "Enerji Səmərəliliyi",
+                    "description": "Yüksək səmərəli LED texnologiyaları ilə enerji qənaəti təmin edən həllər"
+                },
+                {
+                    "title": "Ekoloji Dost",
+                    "description": "Davamlı və ətraf mühitə həssas işıqlandırma sistemləri"
+                },
+                {
+                    "title": "7/24 Texniki Dəstək",
+                    "description": "Fasiləsiz texniki dəstək və təmir xidmətləri"
+                },
+                {
+                    "title": "Beynəlxalq Standartlar",
+                    "description": "ISO, CE, RoHS beynəlxalq keyfiyyət sertifikatları"
+                },
+                {
+                    "title": "Fərdiləşdirilmiş Həllər",
+                    "description": "Layihəyə xüsusi dizayn və mühəndislik xidmətləri"
+                }
+            ],
+            "statistics": {
+                "projects": "Tamamlanan Layihə",
+                "projectsLocation": "Türkiyə geneli",
+                "experience": "İllik Təcrübə",
+                "experienceSub": "Sektor lideri",
+                "experts": "Mütəxəssis Personal",
+                "expertsSub": "Mühəndis və texniklər"
+            },
+            "mission": {
+                "title": "Missiyamız",
+                "description": "Davamlı, innovativ və estetik işıqlandırma həlləri ilə müştəri məmnuniyyətini ən yüksək səviyyədə saxlamaq, enerji səmərəliliyinə töhfə vermək və sektorda lider olmaq."
+            },
+            "vision": {
+                "title": "Vizyonumuz",
+                "description": "Türkiyədə və dünyada ağıllı işıqlandırma sistemləri sahəsində istinad edilən, texnologiya və dizaynı birləşdirən, davamlı həllər istehsal edən qlobal bir marka olmaq."
+            }
+        },
+        "carousel": {
+            "slides": [
+                {
+                    "title": "İşıqlandırma Mühəndisliyində",
+                    "highlightedText": "İnnovativ Həllər",
+                    "description": "20 ili keçən təcrübəmizlə, Türkiyənin aparıcı işıqlandırma mühəndisliyi şirkəti olaraq enerji səmərəli, ekoloji dost və estetik işıqlandırma həlləri təqdim edirik."
+                },
+                {
+                    "title": "Elektrik Podrat",
+                    "highlightedText": "Peşəkar Xidmətlər",
+                    "description": "Müasir sistemlərlə məkanınızı gücləndirir, dizayndan tətbiqə qədər hər mərhələdə yanınızda oluruq."
+                },
+                {
+                    "title": "Ağıllı İşıqlandırma",
+                    "highlightedText": "Avtomatlaşdırma Sistemləri",
+                    "description": "DALI, DMX, KNX kimi qabaqcıl avtomatlaşdırma sistemləri ilə enerji səmərəliliyini artırır, istifadə rahatlığını maksimum səviyyəyə qaldırırıq."
+                }
+            ],
+            "buttons": {
+                "explore": "Kəşf et",
+                "contact": "Əlaqə"
+            },
+            "ariaLabels": {
+                "previousSlide": "Əvvəlki slayd",
+                "nextSlide": "Növbəti slayd",
+                "goToSlide": "Slayd {{index}}-ə keç"
+            }
+        },
+        "contact": {
+            "sectionHeader": {
+                "title": "Əlaqə",
+                "heading": "Bizimlə Əlaqə Saxlayın",
+                "subtitle": "Layihələriniz üçün pulsuz kəşfiyyat və təklif tələb edin"
+            },
+            "contactInfo": {
+                "phone": {
+                    "title": "Telefon",
+                    "hours": "Həftə içi 09:00 - 18:00"
+                },
+                "email": {
+                    "title": "E-poçt",
+                    "response": "24 saat ərzində cavab"
+                },
+                "address": {
+                    "title": "Ünvan",
+                    "visit": "Randevu ilə ziyarət"
+                }
+            },
+            "form": {
+                "name": {
+                    "label": "Adınız Soyadınız *",
+                    "placeholder": "Əhməd Yılmaz"
+                },
+                "email": {
+                    "label": "E-poçt Ünvanınız *",
+                    "placeholder": "info@example.com"
+                },
+                "phone": {
+                    "label": "Telefon Nömrəniz",
+                    "placeholder": "+90 555 123 45 67"
+                },
+                "subject": {
+                    "label": "Layihə Mövzusu *",
+                    "placeholder": "İşıqlandırma Layihəsi"
+                },
+                "message": {
+                    "label": "Layihə Detalları *",
+                    "placeholder": "Layihəniz haqqında ətraflı məlumat verin..."
+                },
+                "submitButton": {
+                    "default": "Göndər",
+                    "submitting": "Göndərilir..."
+                },
+                "successMessage": "Mesajınız uğurla göndərildi! Ən qısa zamanda sizə geri dönüş edəcəyik."
+            }
+        },
+        "footer": {
+            "companyInfo": {
+                "brandName": "Lineo",
+                "brandSuffix": "İşıqlandırma",
+                "description": "İşıqlandırma mühəndisliyində innovativ həllər təqdim edən Türkiyənin aparıcı şirkətlərindən biriyik. 20+ illik təcrübəmizlə keyfiyyət və etibarlılığı bir yerdə təqdim edirik."
+            },
+            "quickLinks": {
+                "title": "Sürətli Keçidlər",
+                "links": {
+                    "home": "Ana Səhifə",
+                    "services": "Xidmətlər",
+                    "projects": "Layihələr",
+                    "about": "Haqqımızda",
+                    "contact": "Əlaqə"
+                }
+            },
+            "services": {
+                "title": "Xidmətlərimiz",
+                "list": [
+                    "Fasad İşıqlandırması",
+                    "Sənaye İşıqlandırması",
+                    "Landşaft İşıqlandırması",
+                    "Yol İşıqlandırması",
+                    "Enerji Həlləri",
+                    "Ağıllı Sistemlər"
+                ]
+            },
+            "contact": {
+                "title": "Bizimlə Əlaqə",
+                "address": "İstanbul, Türkiyə",
+                "phone": "+90 (212) 123 45 67",
+                "email": "info@lineo.com.tr",
+                "hours": "B.e. - Cüm: 09:00 - 18:00"
+            },
+            "newsletter": {
+                "title": "Bülletenimizə Abunə Olun",
+                "placeholder": "E-poçt ünvanınız",
+                "button": "Abunə",
+                "successMessage": "✓ Uğurla abunə oldunuz!"
+            },
+            "bottom": {
+                "copyright": "© {{year}} Lineo İşıqlandırma Mühəndisliyi. Bütün hüquqlar qorunur.",
+                "privacyPolicy": "Gizlilik Siyasəti",
+                "termsOfUse": "İstifadə Şərtləri",
+                "cookiePolicy": "Kuki Siyasəti"
+            },
+            "backToTop": {
+                "ariaLabel": "Yuxarı çıx"
+            }
+        },
+        "navbar": {
+            "logo": "Lineo",
+            "brandSuffix": "İşıqlandırma",
+            "navItems": {
+                "home": "Ana Səhifə",
+                "about": "Haqqımızda",
+                "services": "Xidmətlər",
+                "portfolio": "Layihələr",
+                "contact": "Əlaqə"
+            },
+            "dropdown": {
+                "facade": "Fasad İşıqlandırması",
+                "industrial": "Sənaye İşıqlandırması",
+                "landscape": "Landşaft İşıqlandırması",
+                "smart": "Ağıllı Sistemlər"
+            },
+            "buttons": {
+                "getQuote": "Təklif Al"
+            },
+            "mobileMenu": {
+                "contactInfo": {
+                    "phone": "+90 (212) 123 45 67",
+                    "email": "info@lineo.com.tr"
+                }
+            },
+            "ariaLabels": {
+                "toggleMenu": "Menyunu keçid et"
+            }
+        }
+    }
+}
