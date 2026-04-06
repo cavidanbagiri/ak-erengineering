@@ -1,13 +1,28 @@
-import { useState, useEffect, useRef } from 'react'
-import './App.css'
 
-import HomePage from './pages/Home'
+// App.js
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
+import ServicesPage from './pages/ServicesPage'
+import AboutPage from './pages/AboutPage'
+
+import Footer from './components/Footer'
 
 function App() {
- 
   return (
-    <HomePage />
+    <Router>
+      <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 
 export default App
+

@@ -1,69 +1,46 @@
+// components/Navbar.jsx
 import { useState, useEffect } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
-    const [activeSection, setActiveSection] = useState('home')
     const [servicesDropdown, setServicesDropdown] = useState(false)
+    const location = useLocation()
 
     const navItems = [
-        { label: 'Ana Sayfa', href: '#home', id: 'home' },
-        { label: 'Hakkımızda', href: '#about', id: 'about' },
+        { label: 'Ana Sayfa', path: '/', id: 'home' },
+        { label: 'Hakkımızda', path: '/about', id: 'about' },
         { 
             label: 'Hizmetler', 
-            href: '#services', 
+            path: '/services', 
             id: 'services',
             dropdown: true,
             items: [
-                { label: 'Cephe Aydınlatma', href: '#services', id: 'services' },
-                { label: 'Endüstriyel Aydınlatma', href: '#services', id: 'services' },
-                { label: 'Peyzaj Aydınlatma', href: '#services', id: 'services' },
-                { label: 'Akıllı Sistemler', href: '#services', id: 'services' },
+                { label: 'Cephe Aydınlatma', path: '/services' },
+                { label: 'Endüstriyel Aydınlatma', path: '/services' },
+                { label: 'Peyzaj Aydınlatma', path: '/services' },
+                { label: 'Akıllı Sistemler', path: '/services' },
             ]
         },
-        { label: 'Projeler', href: '#portfolio', id: 'portfolio' },
-        { label: 'İletişim', href: '#contact', id: 'contact' },
+        { label: 'Projeler', path: '/portfolio', id: 'portfolio' },
+        { label: 'İletişim', path: '/contact', id: 'contact' },
     ]
 
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50)
-
-            const sections = navItems.map(item => document.getElementById(item.id))
-            
-            for (let i = sections.length - 1; i >= 0; i--) {
-                const section = sections[i]
-                if (section) {
-                    const rect = section.getBoundingClientRect()
-                    if (rect.top <= 100) {
-                        setActiveSection(navItems[i].id)
-                        break
-                    }
-                }
-            }
         }
 
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
-    }, [navItems])
+    }, [])
 
-    const handleClick = (e, href, id) => {
-        e.preventDefault()
+    // Close mobile menu on route change
+    useEffect(() => {
         setIsOpen(false)
         setServicesDropdown(false)
-        
-        const element = document.getElementById(id)
-        if (element) {
-            const offset = 80
-            const elementPosition = element.offsetTop - offset
-            window.scrollTo({
-                top: elementPosition,
-                behavior: 'smooth'
-            })
-        }
-        
-        setActiveSection(id)
-    }
+    }, [location])
 
     // Close mobile menu on resize
     useEffect(() => {
@@ -87,9 +64,8 @@ function Navbar() {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16 md:h-20">
                         {/* Logo */}
-                        <a 
-                            href="#home" 
-                            onClick={(e) => handleClick(e, '#home', 'home')}
+                        <Link 
+                            to="/"
                             className="relative group flex items-center space-x-2"
                         >
                             <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
@@ -98,7 +74,7 @@ function Navbar() {
                             <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
                                 LINE<span className="text-yellow-500">O</span>
                             </div>
-                        </a>
+                        </Link>
 
                         {/* Desktop Menu */}
                         <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
@@ -112,7 +88,7 @@ function Navbar() {
                                         >
                                             <button
                                                 className={`relative px-4 py-2 text-sm lg:text-base font-medium transition-all duration-300 rounded-lg flex items-center gap-1 group ${
-                                                    activeSection === item.id
+                                                    location.pathname === item.path || location.pathname.startsWith('/services/')
                                                         ? 'text-yellow-400'
                                                         : 'text-gray-300 hover:text-yellow-400'
                                                 }`}
@@ -132,52 +108,53 @@ function Navbar() {
                                                     : 'opacity-0 invisible -translate-y-2'
                                             }`}>
                                                 {item.items.map((subItem, idx) => (
-                                                    <a
+                                                    <Link
                                                         key={idx}
-                                                        href={subItem.href}
-                                                        onClick={(e) => handleClick(e, subItem.href, subItem.id)}
+                                                        to={subItem.path}
                                                         className="block px-4 py-3 text-gray-300 hover:text-yellow-400 hover:bg-white/5 transition-all duration-300"
+                                                        onClick={() => setServicesDropdown(false)}
                                                     >
                                                         {subItem.label}
-                                                    </a>
+                                                    </Link>
                                                 ))}
                                             </div>
                                         </div>
                                     ) : (
-                                        <a
-                                            href={item.href}
-                                            onClick={(e) => handleClick(e, item.href, item.id)}
-                                            className={`relative px-4 py-2 text-sm lg:text-base font-medium transition-all duration-300 rounded-lg group ${
-                                                activeSection === item.id
-                                                    ? 'text-yellow-400'
-                                                    : 'text-gray-300 hover:text-yellow-400'
-                                            }`}
+                                        <NavLink
+                                            to={item.path}
+                                            className={({ isActive }) => `
+                                                relative px-4 py-2 text-sm lg:text-base font-medium transition-all duration-300 rounded-lg group
+                                                ${isActive ? 'text-yellow-400' : 'text-gray-300 hover:text-yellow-400'}
+                                            `}
                                         >
-                                            {item.label}
-                                            {activeSection === item.id && (
-                                                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-6 h-0.5 bg-yellow-400 rounded-full"></span>
+                                            {({ isActive }) => (
+                                                <>
+                                                    {item.label}
+                                                    {isActive && (
+                                                        <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-6 h-0.5 bg-yellow-400 rounded-full"></span>
+                                                    )}
+                                                    <span className={`absolute inset-0 rounded-lg transition-all duration-300 ${
+                                                        isActive
+                                                            ? 'bg-yellow-400/10'
+                                                            : 'bg-yellow-400/0 group-hover:bg-yellow-400/5'
+                                                    }`}></span>
+                                                </>
                                             )}
-                                            <span className={`absolute inset-0 rounded-lg transition-all duration-300 ${
-                                                activeSection === item.id
-                                                    ? 'bg-yellow-400/10'
-                                                    : 'bg-yellow-400/0 group-hover:bg-yellow-400/5'
-                                            }`}></span>
-                                        </a>
+                                        </NavLink>
                                     )}
                                 </div>
                             ))}
                             
                             {/* Contact Button */}
-                            <a
-                                href="#contact"
-                                onClick={(e) => handleClick(e, '#contact', 'contact')}
+                            <Link
+                                to="/contact"
                                 className="ml-4 px-6 py-2 bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900 font-semibold rounded-full hover:shadow-lg hover:shadow-yellow-400/25 transition-all duration-300 hover:scale-105 flex items-center gap-2"
                             >
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                                 Teklif Al
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Mobile Menu Button */}
@@ -213,12 +190,12 @@ function Navbar() {
                         </div>
 
                         {navItems.map((item, index) => (
-                            <a
+                            <Link
                                 key={item.label}
-                                href={item.href}
-                                onClick={(e) => handleClick(e, item.href, item.id)}
+                                to={item.path}
+                                onClick={() => setIsOpen(false)}
                                 className={`text-2xl font-medium transition-all duration-300 transform ${
-                                    activeSection === item.id
+                                    location.pathname === item.path || (item.dropdown && location.pathname.startsWith('/services/'))
                                         ? 'text-yellow-400 scale-110'
                                         : 'text-gray-300 hover:text-yellow-400'
                                 } ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
@@ -227,7 +204,7 @@ function Navbar() {
                                 }}
                             >
                                 {item.label}
-                            </a>
+                            </Link>
                         ))}
                         
                         {/* Contact Info in mobile menu */}
@@ -237,13 +214,13 @@ function Navbar() {
                         style={{
                             transitionDelay: isOpen ? `${navItems.length * 100}ms` : '0ms'
                         }}>
-                            <a
-                                href="#contact"
-                                onClick={(e) => handleClick(e, '#contact', 'contact')}
+                            <Link
+                                to="/contact"
+                                onClick={() => setIsOpen(false)}
                                 className="inline-block px-8 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900 font-semibold rounded-full hover:shadow-lg hover:shadow-yellow-400/25 transition-all duration-300"
                             >
                                 Teklif Al
-                            </a>
+                            </Link>
                             
                             <div className="pt-6 space-y-2 text-gray-400 text-sm">
                                 <p>📞 +90 (212) 123 45 67</p>
