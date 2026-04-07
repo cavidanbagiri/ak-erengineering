@@ -61,19 +61,16 @@
         "carousel": {
             "slides": [
                 {
-                    "image": "src/assets/images/photo_1.webp",
                     "title": "In",
                     "highlightedText": "Innovative Solutions",
                     "description": "With over 20 years of experience, as Turkey's leading lighting engineering company, we offer energy-efficient, environmentally friendly and aesthetic lighting solutions."
                 },
                 {
-                    "image": "src/assets/images/photo_2.jpg",
                     "title": "Electrical Contracting",
                     "highlightedText": "Professional Services",
                     "description": "We strengthen your space with modern systems and are with you at every stage from design to implementation."
                 },
                 {
-                    "image": "src/assets/images/photo_1.webp",
                     "title": "Smart Lighting",
                     "highlightedText": "Automation Systems",
                     "description": "We increase energy efficiency and maximize user comfort with advanced automation systems such as DALI, DMX, KNX."

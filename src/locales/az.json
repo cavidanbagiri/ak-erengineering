@@ -89,19 +89,16 @@
         "carousel": {
             "slides": [
                 {
-                    "image": "src/assets/images/photo_1.webp",
                     "title": "İşıqlandırma Mühəndisliyində",
                     "highlightedText": "İnnovativ Həllər",
                     "description": "20 ili keçən təcrübəmizlə, Türkiyənin aparıcı işıqlandırma mühəndisliyi şirkəti olaraq enerji səmərəli, ekoloji dost və estetik işıqlandırma həlləri təqdim edirik."
                 },
                 {
-                    "image": "src/assets/images/photo_2.jpg",
                     "title": "Elektrik Podrat",
                     "highlightedText": "Peşəkar Xidmətlər",
                     "description": "Müasir sistemlərlə məkanınızı gücləndirir, dizayndan tətbiqə qədər hər mərhələdə yanınızda oluruq."
                 },
                 {
-                    "image": "src/assets/images/photo_1.webp",
                     "title": "Ağıllı İşıqlandırma",
                     "highlightedText": "Avtomatlaşdırma Sistemləri",
                     "description": "DALI, DMX, KNX kimi qabaqcıl avtomatlaşdırma sistemləri ilə enerji səmərəliliyini artırır, istifadə rahatlığını maksimum səviyyəyə qaldırırıq."

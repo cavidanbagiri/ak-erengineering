@@ -4,6 +4,10 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 
+import photo1 from '../assets/images/photo_1.webp'
+import photo2 from '../assets/images/photo_2.jpg'
+import photo3 from '../assets/images/photo_1.webp'
+
 function CarouselAdvanced() {
     const { t } = useTranslation()
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,7 +17,13 @@ function CarouselAdvanced() {
     const progressRef = useRef(null);
 
     // Get slides from translation file
-    const slides = t('carousel.slides', { returnObjects: true }) || [];
+    const slidesData = t('carousel.slides', { returnObjects: true }) || [];
+
+     // Map imported images to slides
+    const slides = slidesData.map((slide, index) => ({
+        ...slide,
+        image: [photo1, photo2, photo3][index] || photo1
+    }));
     
     // If slides array is empty, provide fallback (prevents errors)
     const hasSlides = slides.length > 0;
