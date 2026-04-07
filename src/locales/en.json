@@ -50,21 +50,30 @@
             "vision": {
                 "title": "Our Vision",
                 "description": "To become a global brand that is referenced in smart lighting systems in Turkey and the world, combining technology and design, producing sustainable solutions."
+            },
+             "sectionHeader": {
+                "subtitle": "About Us",
+                "title": "Lineo Lighting",
+                "description": "We make a difference in the lighting sector with our vision and mission"
             }
+
         },
         "carousel": {
             "slides": [
                 {
+                    "image": "src/assets/images/photo_1.webp",
                     "title": "In",
                     "highlightedText": "Innovative Solutions",
                     "description": "With over 20 years of experience, as Turkey's leading lighting engineering company, we offer energy-efficient, environmentally friendly and aesthetic lighting solutions."
                 },
                 {
+                    "image": "src/assets/images/photo_2.jpg",
                     "title": "Electrical Contracting",
                     "highlightedText": "Professional Services",
                     "description": "We strengthen your space with modern systems and are with you at every stage from design to implementation."
                 },
                 {
+                    "image": "src/assets/images/photo_1.webp",
                     "title": "Smart Lighting",
                     "highlightedText": "Automation Systems",
                     "description": "We increase energy efficiency and maximize user comfort with advanced automation systems such as DALI, DMX, KNX."
@@ -205,6 +214,25 @@
             },
             "ariaLabels": {
                 "toggleMenu": "Toggle menu"
+            }
+        },
+       "services": {
+            "sectionHeader": {
+                "subtitle": "Our Services",
+                "title": "Services",
+                "description": "Comprehensive lighting solutions with modern technologies and our expert team"
+            },
+            "descriptions": {
+                "facade": "Aesthetics and energy efficiency with custom LED lighting solutions for modern building facades.",
+                "industrial": "Professional lighting systems for factories, warehouses and industrial facilities.",
+                "landscape": "Environmentally friendly LED lighting solutions for gardens, parks and open areas.",
+                "road": "Safe and economical lighting systems for urban and intercity roads.",
+                "energy": "Lighting systems integrated with renewable energy sources.",
+                "smart": "IoT-based smart lighting control and management systems.",
+                "default": "Quality and reliable lighting solutions"
+            },
+            "buttons": {
+                "readMore": "Read More"
             }
         }
     }

@@ -1,36 +1,22 @@
+
+
 // CarouselAdvanced.jsx - Alternative with more features
 import React, { useState, useEffect, useCallback, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 
 function CarouselAdvanced() {
+    const { t } = useTranslation()
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isPlaying, setIsPlaying] = useState(true);
     const [progress, setProgress] = useState(0);
     const timerRef = useRef(null);
     const progressRef = useRef(null);
 
-    const slides = [
-        {
-            id: 1,
-            image: "src/assets/images/photo_1.webp",
-            title: "Aydınlatma Mühendisliğinde",
-            highlightedText: "Yenilikçi Çözümler",
-            description: "20 yılı aşkın tecrübemizle, Türkiye'nin önde gelen aydınlatma mühendisliği firması olarak enerji verimli, çevre dostu ve estetik aydınlatma çözümleri sunuyoruz.",
-        },
-        {
-            id: 2,
-            image: "src/assets/images/photo_2.jpg",
-            title: "Elektrik Taahhüt",
-            highlightedText: "Profesyonel Hizmetler",
-            description: "Modern sistemlerle mekanınızı güçlendiriyor, tasarımdan uygulamaya her aşamada yanınızda oluyoruz.",
-        },
-        {
-            id: 3,
-            image: "src/assets/images/photo_1.webp",
-            title: "Akıllı Aydınlatma",
-            highlightedText: "Otomasyon Sistemleri",
-            description: "DALI, DMX, KNX gibi ileri seviye otomasyon sistemleriyle enerji verimliliğini artırıyor, kullanım konforunu üst seviyeye çıkarıyoruz.",
-        }
-    ];
+    // Get slides from translation file
+    const slides = t('carousel.slides', { returnObjects: true }) || [];
+    
+    // If slides array is empty, provide fallback (prevents errors)
+    const hasSlides = slides.length > 0;
 
     const goToSlide = (index) => {
         setCurrentIndex(index);
@@ -49,7 +35,7 @@ function CarouselAdvanced() {
 
     // Auto-play with progress bar
     useEffect(() => {
-        if (isPlaying) {
+        if (isPlaying && hasSlides) {
             const duration = 5000; // 5 seconds
             const interval = 50; // Update every 50ms
             
@@ -69,11 +55,16 @@ function CarouselAdvanced() {
                 clearInterval(timerRef.current);
             }
         };
-    }, [isPlaying, nextSlide]);
+    }, [isPlaying, nextSlide, hasSlides]);
 
     // Pause on hover
     const handleMouseEnter = () => setIsPlaying(false);
     const handleMouseLeave = () => setIsPlaying(true);
+
+    // Don't render if no slides
+    if (!hasSlides) {
+        return null;
+    }
 
     return (
         <div 
@@ -86,7 +77,7 @@ function CarouselAdvanced() {
                 {/* Slides */}
                 {slides.map((slide, idx) => (
                     <div
-                        key={slide.id}
+                        key={idx}
                         className={`absolute inset-0 transition-opacity duration-700 ${
                             idx === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
                         }`}
@@ -133,10 +124,10 @@ function CarouselAdvanced() {
                                     
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         <button className="px-8 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
-                                            Keşfet
+                                            {t('carousel.buttons.explore')}
                                         </button>
                                         <button className="px-8 py-3 border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300">
-                                            İletişim
+                                            {t('carousel.buttons.contact')}
                                         </button>
                                     </div>
                                 </div>
@@ -149,6 +140,7 @@ function CarouselAdvanced() {
                 <button 
                     onClick={prevSlide}
                     className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white rounded-full p-3 transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100 backdrop-blur-sm"
+                    aria-label={t('carousel.ariaLabels.previousSlide')}
                 >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -158,6 +150,7 @@ function CarouselAdvanced() {
                 <button 
                     onClick={nextSlide}
                     className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white rounded-full p-3 transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100 backdrop-blur-sm"
+                    aria-label={t('carousel.ariaLabels.nextSlide')}
                 >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -179,6 +172,7 @@ function CarouselAdvanced() {
                             key={idx}
                             onClick={() => goToSlide(idx)}
                             className="group relative"
+                            aria-label={t('carousel.ariaLabels.goToSlide', { index: idx + 1 })}
                         >
                             <div className={`w-16 h-16 rounded-lg overflow-hidden transition-all duration-300 ${
                                 currentIndex === idx 
@@ -200,3 +194,5 @@ function CarouselAdvanced() {
 }
 
 export default CarouselAdvanced
+
+

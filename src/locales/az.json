@@ -1,5 +1,34 @@
 {
     "az": {
+        "navbar": {
+            "logo": "Lineo",
+            "brandSuffix": "İşıqlandırma",
+            "navItems": {
+                "home": "Ana Səhifə",
+                "about": "Haqqımızda",
+                "services": "Xidmətlər",
+                "portfolio": "Layihələr",
+                "contact": "Əlaqə"
+            },
+            "dropdown": {
+                "facade": "Fasad İşıqlandırması",
+                "industrial": "Sənaye İşıqlandırması",
+                "landscape": "Landşaft İşıqlandırması",
+                "smart": "Ağıllı Sistemlər"
+            },
+            "buttons": {
+                "getQuote": "Təklif Al"
+            },
+            "mobileMenu": {
+                "contactInfo": {
+                    "phone": "+90 (212) 123 45 67",
+                    "email": "info@lineo.com.tr"
+                }
+            },
+            "ariaLabels": {
+                "toggleMenu": "Menyunu keçid et"
+            }
+        },
         "about": {
             "title": "Haqqımızda",
             "subtitle": "Vizyonumuz və missiyamız ilə işıqlandırma sektorunda fərq yaradırıq",
@@ -50,21 +79,29 @@
             "vision": {
                 "title": "Vizyonumuz",
                 "description": "Türkiyədə və dünyada ağıllı işıqlandırma sistemləri sahəsində istinad edilən, texnologiya və dizaynı birləşdirən, davamlı həllər istehsal edən qlobal bir marka olmaq."
+            },
+            "sectionHeader": {
+                "subtitle": "Haqqımızda",
+                "title": "Lineo İşıqlandırma",
+                "description": "Vizyonumuz və missiyamız ilə işıqlandırma sektorunda fərq yaradırıq"
             }
         },
         "carousel": {
             "slides": [
                 {
+                    "image": "src/assets/images/photo_1.webp",
                     "title": "İşıqlandırma Mühəndisliyində",
                     "highlightedText": "İnnovativ Həllər",
                     "description": "20 ili keçən təcrübəmizlə, Türkiyənin aparıcı işıqlandırma mühəndisliyi şirkəti olaraq enerji səmərəli, ekoloji dost və estetik işıqlandırma həlləri təqdim edirik."
                 },
                 {
+                    "image": "src/assets/images/photo_2.jpg",
                     "title": "Elektrik Podrat",
                     "highlightedText": "Peşəkar Xidmətlər",
                     "description": "Müasir sistemlərlə məkanınızı gücləndirir, dizayndan tətbiqə qədər hər mərhələdə yanınızda oluruq."
                 },
                 {
+                    "image": "src/assets/images/photo_1.webp",
                     "title": "Ağıllı İşıqlandırma",
                     "highlightedText": "Avtomatlaşdırma Sistemləri",
                     "description": "DALI, DMX, KNX kimi qabaqcıl avtomatlaşdırma sistemləri ilə enerji səmərəliliyini artırır, istifadə rahatlığını maksimum səviyyəyə qaldırırıq."
@@ -178,33 +215,23 @@
                 "ariaLabel": "Yuxarı çıx"
             }
         },
-        "navbar": {
-            "logo": "Lineo",
-            "brandSuffix": "İşıqlandırma",
-            "navItems": {
-                "home": "Ana Səhifə",
-                "about": "Haqqımızda",
-                "services": "Xidmətlər",
-                "portfolio": "Layihələr",
-                "contact": "Əlaqə"
+        "services": {
+            "sectionHeader": {
+                "subtitle": "Xidmətlərimiz",
+                "title": "Xidmətlərimiz",
+                "description": "Müasir texnologiyalar və ekspert komandamızla təqdim etdiyimiz hərtərəfli işıqlandırma həlləri"
             },
-            "dropdown": {
-                "facade": "Fasad İşıqlandırması",
-                "industrial": "Sənaye İşıqlandırması",
-                "landscape": "Landşaft İşıqlandırması",
-                "smart": "Ağıllı Sistemlər"
+            "descriptions": {
+                "facade": "Müasir bina fasadları üçün xüsusi LED işıqlandırma həlləri ilə estetik və enerji səmərəliliyi.",
+                "industrial": "Fabrik, anbar və sənaye obyektləri üçün peşəkar işıqlandırma sistemləri.",
+                "landscape": "Bağ, park və açıq sahələr üçün ekoloji dostlu LED işıqlandırma həlləri.",
+                "road": "Şəhər daxili və şəhərlərarası yollar üçün təhlükəsiz və iqtisadi işıqlandırma sistemləri.",
+                "energy": "Bərpa olunan enerji mənbələri ilə inteqrasiya olunmuş işıqlandırma sistemləri.",
+                "smart": "IoT əsaslı ağıllı işıqlandırma nəzarət və idarəetmə sistemləri.",
+                "default": "Keyfiyyətli və etibarlı işıqlandırma həlləri"
             },
             "buttons": {
-                "getQuote": "Təklif Al"
-            },
-            "mobileMenu": {
-                "contactInfo": {
-                    "phone": "+90 (212) 123 45 67",
-                    "email": "info@lineo.com.tr"
-                }
-            },
-            "ariaLabels": {
-                "toggleMenu": "Menyunu keçid et"
+                "readMore": "Ətraflı Məlumat"
             }
         }
     }

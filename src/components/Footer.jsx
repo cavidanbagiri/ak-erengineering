@@ -1,26 +1,25 @@
+
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 function Footer() {
+    const { t } = useTranslation()
     const [currentYear, setCurrentYear] = useState(2024)
     const [email, setEmail] = useState('')
     const [subscribeStatus, setSubscribeStatus] = useState(null)
 
+    // Get navigation items from translations
     const navItems = [
-        { label: 'Ana Sayfa', href: '#home' },
-        { label: 'Hizmetler', href: '#services' },
-        { label: 'Projeler', href: '#portfolio' },
-        { label: 'Hakkımızda', href: '#about' },
-        { label: 'İletişim', href: '#contact' },
+        { label: t('footer.quickLinks.links.home'), href: '/' },
+        { label: t('footer.quickLinks.links.services'), href: '/services' },
+        { label: t('footer.quickLinks.links.projects'), href: '/portfolio' },
+        { label: t('footer.quickLinks.links.about'), href: '/about' },
+        { label: t('footer.quickLinks.links.contact'), href: '/contact' },
     ]
 
-    const services = [
-        'Cephe Aydınlatma',
-        'Endüstriyel Aydınlatma',
-        'Peyzaj Aydınlatma',
-        'Yol Aydınlatma',
-        'Enerji Çözümleri',
-        'Akıllı Sistemler'
-    ]
+    // Get services from translations
+    const services = t('footer.services.list', { returnObjects: true }) || []
 
     useEffect(() => {
         setCurrentYear(new Date().getFullYear())
@@ -48,16 +47,14 @@ function Footer() {
                     <div className="space-y-4">
                         <div className="flex items-center space-x-2">
                             <div className="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-                                LINE<span className="text-yellow-500">O</span>
+                                {t('footer.companyInfo.brandName')}<span className="text-yellow-500">O</span>
                             </div>
                             <div className="w-1 h-8 bg-yellow-400 rounded-full"></div>
-                            <span className="text-gray-400 text-sm">Aydınlatma</span>
+                            <span className="text-gray-400 text-sm">{t('footer.companyInfo.brandSuffix')}</span>
                         </div>
                         
                         <p className="text-gray-300 text-sm leading-relaxed">
-                            Aydınlatma mühendisliğinde yenilikçi çözümler sunan, 
-                            Türkiye'nin önde gelen firmalarından biriyiz. 20+ yıllık 
-                            tecrübemizle kalite ve güvenilirliği bir arada sunuyoruz.
+                            {t('footer.companyInfo.description')}
                         </p>
                         
                         {/* Social Links */}
@@ -92,16 +89,16 @@ function Footer() {
                     {/* Quick Links */}
                     <div>
                         <h4 className="text-white font-semibold text-lg mb-4 relative">
-                            Hızlı Bağlantılar
+                            {t('footer.quickLinks.title')}
                             <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-yellow-400 rounded-full"></div>
                         </h4>
                         <ul className="space-y-2">
-                            {navItems.map((item) => (
-                                <li key={item.label}>
-                                    <a href={item.href} className="text-gray-400 hover:text-yellow-400 transition-all duration-300 flex items-center gap-2 group">
+                            {navItems.map((item, index) => (
+                                <li key={index}>
+                                    <Link to={item.href} className="text-gray-400 hover:text-yellow-400 transition-all duration-300 flex items-center gap-2 group">
                                         <span className="w-0 group-hover:w-2 h-0.5 bg-yellow-400 transition-all duration-300"></span>
                                         {item.label}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -110,16 +107,16 @@ function Footer() {
                     {/* Services */}
                     <div>
                         <h4 className="text-white font-semibold text-lg mb-4 relative">
-                            Hizmetlerimiz
+                            {t('footer.services.title')}
                             <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-yellow-400 rounded-full"></div>
                         </h4>
                         <ul className="space-y-2">
                             {services.map((service, index) => (
                                 <li key={index}>
-                                    <a href="#services" className="text-gray-400 hover:text-yellow-400 transition-all duration-300 flex items-center gap-2 group">
+                                    <Link to="/services" className="text-gray-400 hover:text-yellow-400 transition-all duration-300 flex items-center gap-2 group">
                                         <span className="w-0 group-hover:w-2 h-0.5 bg-yellow-400 transition-all duration-300"></span>
                                         {service}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -128,7 +125,7 @@ function Footer() {
                     {/* Contact & Newsletter */}
                     <div>
                         <h4 className="text-white font-semibold text-lg mb-4 relative">
-                            Bize Ulaşın
+                            {t('footer.contact.title')}
                             <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-yellow-400 rounded-full"></div>
                         </h4>
                         
@@ -138,37 +135,37 @@ function Footer() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
-                                <span>İstanbul, Türkiye</span>
+                                <span>{t('footer.contact.address')}</span>
                             </li>
                             <li className="flex items-center gap-3 text-gray-400 text-sm">
                                 <svg className="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
-                                <span>+90 (212) 123 45 67</span>
+                                <span>{t('footer.contact.phone')}</span>
                             </li>
                             <li className="flex items-center gap-3 text-gray-400 text-sm">
                                 <svg className="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-                                <span>info@lineo.com.tr</span>
+                                <span>{t('footer.contact.email')}</span>
                             </li>
                             <li className="flex items-center gap-3 text-gray-400 text-sm">
                                 <svg className="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                <span>Pzt - Cum: 09:00 - 18:00</span>
+                                <span>{t('footer.contact.hours')}</span>
                             </li>
                         </ul>
 
                         {/* Newsletter */}
                         <div className="mt-6">
-                            <h5 className="text-white text-sm font-semibold mb-3">Bültenimize Abone Olun</h5>
+                            <h5 className="text-white text-sm font-semibold mb-3">{t('footer.newsletter.title')}</h5>
                             <form onSubmit={handleSubscribe} className="relative">
                                 <input
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    placeholder="E-posta adresiniz"
+                                    placeholder={t('footer.newsletter.placeholder')}
                                     className="w-full px-4 py-2.5 pr-24 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 text-sm focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 transition-all"
                                     required
                                 />
@@ -176,12 +173,12 @@ function Footer() {
                                     type="submit"
                                     className="absolute right-1 top-1 px-3 py-1.5 bg-yellow-400 hover:bg-yellow-500 text-gray-900 text-sm font-semibold rounded-md transition-all duration-300"
                                 >
-                                    Abone
+                                    {t('footer.newsletter.button')}
                                 </button>
                             </form>
                             {subscribeStatus === 'success' && (
                                 <p className="text-green-400 text-xs mt-2">
-                                    ✓ Başarıyla abone oldunuz!
+                                    {t('footer.newsletter.successMessage')}
                                 </p>
                             )}
                         </div>
@@ -192,19 +189,19 @@ function Footer() {
                 <div className="pt-8 mt-8 border-t border-white/10">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-gray-400 text-sm text-center md:text-left">
-                            © {currentYear} Lineo Aydınlatma Mühendisliği. Tüm hakları saklıdır.
+                            {t('footer.bottom.copyright', { year: currentYear })}
                         </p>
                         
                         <div className="flex gap-6">
-                            <a href="#" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors">
-                                Gizlilik Politikası
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors">
-                                Kullanım Koşulları
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors">
-                                Çerez Politikası
-                            </a>
+                            <Link to="/privacy" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors">
+                                {t('footer.bottom.privacyPolicy')}
+                            </Link>
+                            <Link to="/terms" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors">
+                                {t('footer.bottom.termsOfUse')}
+                            </Link>
+                            <Link to="/cookies" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors">
+                                {t('footer.bottom.cookiePolicy')}
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -214,7 +211,7 @@ function Footer() {
             <button
                 onClick={scrollToTop}
                 className="fixed bottom-8 right-8 z-50 bg-yellow-400 hover:bg-yellow-500 text-gray-900 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
-                aria-label="Yukarı çık"
+                aria-label={t('footer.backToTop.ariaLabel')}
             >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />

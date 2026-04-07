@@ -1,30 +1,32 @@
-// components/Navbar.jsx
 import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from './LanguageSwitcher'
 
 function Navbar() {
+    const { t } = useTranslation()
     const [isOpen, setIsOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
     const [servicesDropdown, setServicesDropdown] = useState(false)
     const location = useLocation()
 
     const navItems = [
-        { label: 'Ana Sayfa', path: '/', id: 'home' },
-        { label: 'Hakkımızda', path: '/about', id: 'about' },
+        { label: t('navbar.navItems.home'), path: '/', id: 'home' },
+        { label: t('navbar.navItems.about'), path: '/about', id: 'about' },
         { 
-            label: 'Hizmetler', 
+            label: t('navbar.navItems.services'), 
             path: '/services', 
             id: 'services',
             dropdown: true,
             items: [
-                { label: 'Cephe Aydınlatma', path: '/services' },
-                { label: 'Endüstriyel Aydınlatma', path: '/services' },
-                { label: 'Peyzaj Aydınlatma', path: '/services' },
-                { label: 'Akıllı Sistemler', path: '/services' },
+                { label: t('navbar.dropdown.facade'), path: '/services' },
+                { label: t('navbar.dropdown.industrial'), path: '/services' },
+                { label: t('navbar.dropdown.landscape'), path: '/services' },
+                { label: t('navbar.dropdown.smart'), path: '/services' },
             ]
         },
-        { label: 'Projeler', path: '/portfolio', id: 'portfolio' },
-        { label: 'İletişim', path: '/contact', id: 'contact' },
+        { label: t('navbar.navItems.portfolio'), path: '/portfolio', id: 'portfolio' },
+        { label: t('navbar.navItems.contact'), path: '/contact', id: 'contact' },
     ]
 
     useEffect(() => {
@@ -36,13 +38,11 @@ function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
-    // Close mobile menu on route change
     useEffect(() => {
         setIsOpen(false)
         setServicesDropdown(false)
     }, [location])
 
-    // Close mobile menu on resize
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 768 && isOpen) {
@@ -64,15 +64,17 @@ function Navbar() {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16 md:h-20">
                         {/* Logo */}
-                        <Link 
-                            to="/"
-                            className="relative group flex items-center space-x-2"
-                        >
+                        <Link to="/" className="relative group flex items-center space-x-2">
                             <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
                                 <span className="text-gray-900 font-bold text-lg">L</span>
                             </div>
-                            <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-                                LINE<span className="text-yellow-500">O</span>
+                            <div>
+                                <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+                                    {t('navbar.logo')}<span className="text-yellow-500">O</span>
+                                </div>
+                                <div className="text-xs text-gray-400 hidden md:block">
+                                    {t('navbar.brandSuffix')}
+                                </div>
                             </div>
                         </Link>
 
@@ -101,7 +103,6 @@ function Navbar() {
                                                 </svg>
                                             </button>
                                             
-                                            {/* Dropdown Menu */}
                                             <div className={`absolute top-full left-0 mt-2 w-64 bg-gray-900/95 backdrop-blur-md rounded-xl shadow-xl border border-white/10 overflow-hidden transition-all duration-300 ${
                                                 servicesDropdown 
                                                     ? 'opacity-100 visible translate-y-0' 
@@ -145,6 +146,9 @@ function Navbar() {
                                 </div>
                             ))}
                             
+                            {/* Language Switcher */}
+                            <LanguageSwitcher />
+                            
                             {/* Contact Button */}
                             <Link
                                 to="/contact"
@@ -153,7 +157,7 @@ function Navbar() {
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-                                Teklif Al
+                                {t('navbar.buttons.getQuote')}
                             </Link>
                         </div>
 
@@ -161,7 +165,7 @@ function Navbar() {
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="md:hidden relative w-10 h-10 flex flex-col items-center justify-center gap-1.5 group z-50"
-                            aria-label="Toggle menu"
+                            aria-label={t('navbar.ariaLabels.toggleMenu')}
                         >
                             <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${
                                 isOpen ? 'rotate-45 translate-y-2' : ''
@@ -181,10 +185,9 @@ function Navbar() {
                     isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
                 }`}>
                     <div className="flex flex-col items-center justify-center min-h-screen space-y-6 px-4">
-                        {/* Logo in mobile menu */}
                         <div className="mb-8 text-center">
                             <div className="text-4xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent mb-2">
-                                LINE<span className="text-yellow-500">O</span>
+                                {t('navbar.logo')}<span className="text-yellow-500">O</span>
                             </div>
                             <div className="w-12 h-0.5 bg-yellow-400 mx-auto"></div>
                         </div>
@@ -207,34 +210,46 @@ function Navbar() {
                             </Link>
                         ))}
                         
-                        {/* Contact Info in mobile menu */}
-                        <div className={`mt-12 text-center space-y-4 transition-all duration-300 ${
+                        {/* Language Switcher in Mobile Menu */}
+                        <div className={`mt-8 transition-all duration-300 ${
                             isOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                         }`}
                         style={{
                             transitionDelay: isOpen ? `${navItems.length * 100}ms` : '0ms'
+                        }}>
+                            <LanguageSwitcher />
+                        </div>
+                        
+                        <div className={`mt-12 text-center space-y-4 transition-all duration-300 ${
+                            isOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                        }`}
+                        style={{
+                            transitionDelay: isOpen ? `${(navItems.length + 1) * 100}ms` : '0ms'
                         }}>
                             <Link
                                 to="/contact"
                                 onClick={() => setIsOpen(false)}
                                 className="inline-block px-8 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900 font-semibold rounded-full hover:shadow-lg hover:shadow-yellow-400/25 transition-all duration-300"
                             >
-                                Teklif Al
+                                {t('navbar.buttons.getQuote')}
                             </Link>
                             
                             <div className="pt-6 space-y-2 text-gray-400 text-sm">
-                                <p>📞 +90 (212) 123 45 67</p>
-                                <p>✉️ info@lineo.com.tr</p>
+                                <p>📞 {t('navbar.mobileMenu.contactInfo.phone')}</p>
+                                <p>✉️ {t('navbar.mobileMenu.contactInfo.email')}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
 
-            {/* Spacer */}
             <div className="h-16 md:h-20"></div>
         </>
     )
 }
 
 export default Navbar
+
+
+
+
