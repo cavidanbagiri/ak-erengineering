@@ -51,17 +51,16 @@
                 "title": "Our Vision",
                 "description": "To become a global brand that is referenced in smart lighting systems in Turkey and the world, combining technology and design, producing sustainable solutions."
             },
-             "sectionHeader": {
+            "sectionHeader": {
                 "subtitle": "About Us",
                 "title": "Lineo Lighting",
                 "description": "We make a difference in the lighting sector with our vision and mission"
             }
-
         },
         "carousel": {
             "slides": [
                 {
-                    "title": "In",
+                    "title": "In Lighting Engineering",
                     "highlightedText": "Innovative Solutions",
                     "description": "With over 20 years of experience, as Turkey's leading lighting engineering company, we offer energy-efficient, environmentally friendly and aesthetic lighting solutions."
                 },
@@ -213,7 +212,7 @@
                 "toggleMenu": "Toggle menu"
             }
         },
-       "services": {
+        "services": {
             "sectionHeader": {
                 "subtitle": "Our Services",
                 "title": "Services",

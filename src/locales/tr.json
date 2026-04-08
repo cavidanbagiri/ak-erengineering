@@ -1,0 +1,235 @@
+{
+    "tr": {
+        "about": {
+            "title": "Hakkımızda",
+            "subtitle": "Vizyonumuz ve misyonumuz ile aydınlatma sektöründe fark yaratıyoruz",
+            "companyName": "Lineo Aydınlatma",
+            "yearsOfExperience": "20+ Yıllık Tecrübe",
+            "description1": "2003 yılından bu yana aydınlatma sektöründe faaliyet gösteren firmamız, Türkiye'nin en büyük aydınlatma projelerine imza atmıştır.",
+            "description2": "Uzman mühendis kadromuz ve son teknoloji ekipmanlarımızla, müşterilerimize en kaliteli hizmeti sunmayı hedefliyoruz.",
+            "certifications": {
+                "iso": "ISO 9001",
+                "ce": "CE Belgesi",
+                "rohs": "RoHS Uyumlu"
+            },
+            "whyChooseUs": "Neden Bizi Seçmelisiniz?",
+            "benefits": [
+                {
+                    "title": "Enerji Verimliliği",
+                    "description": "Yüksek verimli LED teknolojileri ile enerji tasarrufu sağlayan çözümler"
+                },
+                {
+                    "title": "Çevre Dostu",
+                    "description": "Sürdürülebilir ve çevreye duyarlı aydınlatma sistemleri"
+                },
+                {
+                    "title": "7/24 Teknik Destek",
+                    "description": "Kesintisiz teknik destek ve bakım hizmetleri"
+                },
+                {
+                    "title": "Uluslararası Standartlar",
+                    "description": "ISO, CE, RoHS uluslararası kalite sertifikaları"
+                },
+                {
+                    "title": "Özelleştirilmiş Çözümler",
+                    "description": "Projeye özel tasarım ve mühendislik hizmetleri"
+                }
+            ],
+            "statistics": {
+                "projects": "Tamamlanan Proje",
+                "projectsLocation": "Türkiye geneli",
+                "experience": "Yıllık Tecrübe",
+                "experienceSub": "Sektör lideri",
+                "experts": "Uzman Personel",
+                "expertsSub": "Mühendis ve teknisyenler"
+            },
+            "mission": {
+                "title": "Misyonumuz",
+                "description": "Sürdürülebilir, yenilikçi ve estetik aydınlatma çözümleriyle müşteri memnuniyetini en üst düzeyde tutmak, enerji verimliliğine katkı sağlamak ve sektörde öncü olmak."
+            },
+            "vision": {
+                "title": "Vizyonumuz",
+                "description": "Türkiye'de ve dünyada akıllı aydınlatma sistemleri konusunda referans gösterilen, teknoloji ve tasarımı birleştiren, sürdürülebilir çözümler üreten global bir marka olmak."
+            },
+            "sectionHeader": {
+                "subtitle": "Hakkımızda",
+                "title": "Lineo Aydınlatma",
+                "description": "Vizyonumuz ve misyonumuz ile aydınlatma sektöründe fark yaratıyoruz"
+            }
+        },
+        "carousel": {
+            "slides": [
+                {
+                    "title": "Aydınlatma Mühendisliğinde",
+                    "highlightedText": "Yenilikçi Çözümler",
+                    "description": "20 yılı aşkın tecrübemizle, Türkiye'nin önde gelen aydınlatma mühendisliği firması olarak enerji verimli, çevre dostu ve estetik aydınlatma çözümleri sunuyoruz."
+                },
+                {
+                    "title": "Elektrik Taahhüt",
+                    "highlightedText": "Profesyonel Hizmetler",
+                    "description": "Modern sistemlerle mekanınızı güçlendiriyor, tasarımdan uygulamaya her aşamada yanınızda oluyoruz."
+                },
+                {
+                    "title": "Akıllı Aydınlatma",
+                    "highlightedText": "Otomasyon Sistemleri",
+                    "description": "DALI, DMX, KNX gibi ileri seviye otomasyon sistemleriyle enerji verimliliğini artırıyor, kullanım konforunu üst seviyeye çıkarıyoruz."
+                }
+            ],
+            "buttons": {
+                "explore": "Keşfet",
+                "contact": "İletişim"
+            },
+            "ariaLabels": {
+                "previousSlide": "Önceki slayt",
+                "nextSlide": "Sonraki slayt",
+                "goToSlide": "Slayt {{index}}'e git"
+            }
+        },
+        "contact": {
+            "sectionHeader": {
+                "title": "İletişim",
+                "heading": "Bize Ulaşın",
+                "subtitle": "Projeleriniz için ücretsiz keşif ve teklif talebinde bulunun"
+            },
+            "contactInfo": {
+                "phone": {
+                    "title": "Telefon",
+                    "hours": "Hafta içi 09:00 - 18:00"
+                },
+                "email": {
+                    "title": "E-posta",
+                    "response": "24 saat içinde yanıt"
+                },
+                "address": {
+                    "title": "Adres",
+                    "visit": "Randevu ile ziyaret"
+                }
+            },
+            "form": {
+                "name": {
+                    "label": "Adınız Soyadınız *",
+                    "placeholder": "Ahmet Yılmaz"
+                },
+                "email": {
+                    "label": "E-posta Adresiniz *",
+                    "placeholder": "info@example.com"
+                },
+                "phone": {
+                    "label": "Telefon Numaranız",
+                    "placeholder": "+90 555 123 45 67"
+                },
+                "subject": {
+                    "label": "Proje Konusu *",
+                    "placeholder": "Aydınlatma Projesi"
+                },
+                "message": {
+                    "label": "Proje Detayları *",
+                    "placeholder": "Projeniz hakkında detaylı bilgi verin..."
+                },
+                "submitButton": {
+                    "default": "Gönder",
+                    "submitting": "Gönderiliyor..."
+                },
+                "successMessage": "Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız."
+            }
+        },
+        "footer": {
+            "companyInfo": {
+                "brandName": "Lineo",
+                "brandSuffix": "Aydınlatma",
+                "description": "Aydınlatma mühendisliğinde yenilikçi çözümler sunan Türkiye'nin önde gelen firmalarından biriyiz. 20+ yıllık tecrübemizle kalite ve güvenilirliği bir arada sunuyoruz."
+            },
+            "quickLinks": {
+                "title": "Hızlı Bağlantılar",
+                "links": {
+                    "home": "Ana Sayfa",
+                    "services": "Hizmetler",
+                    "projects": "Projeler",
+                    "about": "Hakkımızda",
+                    "contact": "İletişim"
+                }
+            },
+            "services": {
+                "title": "Hizmetlerimiz",
+                "list": [
+                    "Cephe Aydınlatma",
+                    "Endüstriyel Aydınlatma",
+                    "Peyzaj Aydınlatma",
+                    "Yol Aydınlatma",
+                    "Enerji Çözümleri",
+                    "Akıllı Sistemler"
+                ]
+            },
+            "contact": {
+                "title": "Bize Ulaşın",
+                "address": "İstanbul, Türkiye",
+                "phone": "+90 (212) 123 45 67",
+                "email": "info@lineo.com.tr",
+                "hours": "Pzt - Cum: 09:00 - 18:00"
+            },
+            "newsletter": {
+                "title": "Bültenimize Abone Olun",
+                "placeholder": "E-posta adresiniz",
+                "button": "Abone Ol",
+                "successMessage": "✓ Başarıyla abone oldunuz!"
+            },
+            "bottom": {
+                "copyright": "© {{year}} Lineo Aydınlatma Mühendisliği. Tüm hakları saklıdır.",
+                "privacyPolicy": "Gizlilik Politikası",
+                "termsOfUse": "Kullanım Koşulları",
+                "cookiePolicy": "Çerez Politikası"
+            },
+            "backToTop": {
+                "ariaLabel": "Yukarı çık"
+            }
+        },
+        "navbar": {
+            "logo": "Lineo",
+            "brandSuffix": "Aydınlatma",
+            "navItems": {
+                "home": "Ana Sayfa",
+                "about": "Hakkımızda",
+                "services": "Hizmetler",
+                "portfolio": "Projeler",
+                "contact": "İletişim"
+            },
+            "dropdown": {
+                "facade": "Cephe Aydınlatması",
+                "industrial": "Endüstriyel Aydınlatma",
+                "landscape": "Peyzaj Aydınlatması",
+                "smart": "Akıllı Sistemler"
+            },
+            "buttons": {
+                "getQuote": "Teklif Al"
+            },
+            "mobileMenu": {
+                "contactInfo": {
+                    "phone": "+90 (212) 123 45 67",
+                    "email": "info@lineo.com.tr"
+                }
+            },
+            "ariaLabels": {
+                "toggleMenu": "Menüyü aç/kapat"
+            }
+        },
+        "services": {
+            "sectionHeader": {
+                "subtitle": "Hizmetlerimiz",
+                "title": "Hizmetlerimiz",
+                "description": "Modern teknolojiler ve uzman ekibimizle sunduğumuz kapsamlı aydınlatma çözümleri"
+            },
+            "descriptions": {
+                "facade": "Modern bina cephelerine özel LED aydınlatma çözümleri ile estetik ve enerji verimliliği.",
+                "industrial": "Fabrika, depo ve endüstriyel tesisler için profesyonel aydınlatma sistemleri.",
+                "landscape": "Bahçe, park ve açık alanlar için doğa dostu LED aydınlatma çözümleri.",
+                "road": "Şehir içi ve şehirlerarası yollar için güvenli ve ekonomik aydınlatma sistemleri.",
+                "energy": "Yenilenebilir enerji kaynakları ile entegre aydınlatma sistemleri.",
+                "smart": "IoT tabanlı akıllı aydınlatma kontrol ve yönetim sistemleri.",
+                "default": "Kaliteli ve güvenilir aydınlatma çözümleri"
+            },
+            "buttons": {
+                "readMore": "Daha Fazla"
+            }
+        }
+    }
+}

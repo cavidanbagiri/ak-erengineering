@@ -1,13 +1,13 @@
 export const getInitialLanguage = () => {
   // Check localStorage first
   const savedLang = localStorage.getItem('i18nextLng');
-  if (savedLang && ['az', 'en', 'ru'].includes(savedLang)) {
+  if (savedLang && ['az', 'en', 'ru', 'tr'].includes(savedLang)) {
     return savedLang;
   }
   
   // Check browser language
   const browserLang = navigator.language.split('-')[0];
-  if (['az', 'en', 'ru'].includes(browserLang)) {
+  if (['az', 'en', 'ru', 'tr'].includes(browserLang)) {
     return browserLang;
   }
   
@@ -18,5 +18,6 @@ export const getInitialLanguage = () => {
 export const languageNames = {
   az: 'Azərbaycan',
   en: 'English',
-  ru: 'Русский'
+  ru: 'Русский',
+  tr: 'Turkce'
 };

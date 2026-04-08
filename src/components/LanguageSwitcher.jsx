@@ -7,7 +7,8 @@ function LanguageSwitcher() {
   const languages = [
     { code: 'az', name: 'Azərbaycan', flag: '🇦🇿' },
     { code: 'en', name: 'English', flag: '🇬🇧' },
-    { code: 'ru', name: 'Русский', flag: '🇷🇺' }
+    { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+    { code: 'tr', name: 'Turkce', flag: 'TR' },
   ];
 
   const changeLanguage = (langCode) => {

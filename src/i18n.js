@@ -7,6 +7,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import azTranslations from './locales/az.json';
 import enTranslations from './locales/en.json';
 import ruTranslations from './locales/ru.json';
+import trTranslations from './locales/tr.json';
 
 // The resources object
 const resources = {
@@ -18,6 +19,9 @@ const resources = {
   },
   ru: {
     translation: ruTranslations.ru // Access the 'ru' key from your JSON
+  },
+  tr: {
+    translation: trTranslations.tr // Access the 'tr' key from your JSON
   }
 };
 
