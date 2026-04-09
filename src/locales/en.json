@@ -190,6 +190,7 @@
                 "home": "Home",
                 "about": "About Us",
                 "services": "Services",
+                "technical": "Technical Services",
                 "portfolio": "Projects",
                 "contact": "Contact"
             },
@@ -197,7 +198,15 @@
                 "facade": "Facade Lighting",
                 "industrial": "Industrial Lighting",
                 "landscape": "Landscape Lighting",
-                "smart": "Smart Systems"
+                "road": "Road Lighting",
+                "energy": "Energy Solutions",
+                "smart": "Smart Systems",
+                "electricalPanel": "Electrical Panel Manufacturing",
+                "mechanicalDrive": "Mechanical Drive Systems",
+                "bms": "BMS (Building Management)",
+                "ddc": "DDC Control Devices",
+                "prover": "Prover / Test Devices",
+                "mechanicalInstallation": "Mechanical Installation"
             },
             "buttons": {
                 "getQuote": "Get Quote"
@@ -230,6 +239,331 @@
             "buttons": {
                 "readMore": "Read More"
             }
+        },
+        "technicalServices": {
+            "sectionHeader": {
+                "subtitle": "Technical Infrastructure",
+                "title": "Automation & Control Systems",
+                "description": "Professional solutions for industrial automation and building management systems"
+            },
+            "list": [
+                {
+                    "title": "Electrical Panel Manufacturing",
+                    "description": "Custom designed electrical distribution and control panels for industrial facilities and buildings."
+                },
+                {
+                    "title": "Mechanical Drive Systems (Shaft/Mill)",
+                    "description": "Shaft and drive systems manufacturing and assembly for rotational motion transmission."
+                },
+                {
+                    "title": "BMS (Building Management System)",
+                    "description": "Centralized control systems for HVAC, lighting, security and energy management."
+                },
+                {
+                    "title": "DDC Control Devices",
+                    "description": "Direct digital control systems for sensor and actuator management."
+                },
+                {
+                    "title": "Prover / Test Devices",
+                    "description": "Flow meter and sensor verification, calibration and test systems."
+                },
+                {
+                    "title": "Mechanical Installation Assembly",
+                    "description": "Pump, valve, pipe and mechanical equipment installation services."
+                }
+            ],
+            "buttons": {
+                "learnMore": "Learn More"
+            }
+        },
+        "serviceDetails": {
+            "facade-lighting": {
+                "title": "Facade Lighting",
+                "heroImage": "/images/services/facade-hero.jpg",
+                "shortDescription": "Aesthetics and energy efficiency with custom LED lighting solutions for modern building facades.",
+                "fullDescription": "Our facade lighting solutions transform buildings into architectural masterpieces after dark. We combine aesthetics with energy efficiency using state-of-the-art LED technology. Whether it's a corporate headquarters, hotel, or residential complex, our custom designs highlight the unique architectural features of any structure.",
+                "features": [
+                    "Custom DMX controlled LED systems",
+                    "Energy efficient (up to 70% savings)",
+                    "Weather resistant IP65+ ratings",
+                    "Dynamic color changing capabilities",
+                    "Easy integration with building automation"
+                ],
+                "benefits": [
+                    "Enhances brand image and visibility",
+                    "Increases property value",
+                    "Low maintenance costs",
+                    "Reduced carbon footprint",
+                    "Smart scheduling and automation"
+                ],
+                "technologies": [
+                    "DMX512",
+                    "DALI",
+                    "Ethernet/IP",
+                    "Wireless Control",
+                    "Motion Sensors"
+                ],
+                "applications": [
+                    "Commercial Buildings",
+                    "Hotels",
+                    "Government Buildings",
+                    "Residential Complexes",
+                    "Historical Landmarks"
+                ],
+                "gallery": [
+                    "/images/facade1.jpg",
+                    "/images/facade2.jpg",
+                    "/images/facade3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "How long does installation take?",
+                        "answer": "Installation typically takes 2-4 weeks depending on building size and complexity."
+                    },
+                    {
+                        "question": "What is the lifespan of LED systems?",
+                        "answer": "Our LED systems last 50,000+ hours (approx. 10-15 years with normal use)."
+                    }
+                ]
+            },
+            "industrial-lighting": {
+                "title": "Industrial Lighting",
+                "heroImage": "/images/services/industrial-hero.jpg",
+                "shortDescription": "Professional lighting systems for factories, warehouses and industrial facilities.",
+                "fullDescription": "Industrial environments demand robust, high-performance lighting solutions. Our industrial lighting systems are designed to withstand harsh conditions while providing optimal illumination for safety and productivity. From high-bay LED fixtures to explosion-proof lighting, we have solutions for every industrial application.",
+                "features": [
+                    "High lumen output (150+ lm/W)",
+                    "Operating temperature -40°C to +60°C",
+                    "Shock and vibration resistant",
+                    "Emergency backup options",
+                    "Hazardous location ratings"
+                ],
+                "benefits": [
+                    "Improved worker safety",
+                    "Reduced energy costs (60-80% savings)",
+                    "Minimal maintenance requirements",
+                    "Enhanced productivity",
+                    "5-10 year warranty"
+                ],
+                "technologies": [
+                    "High Bay LED",
+                    "Sensors",
+                    "Daylight Harvesting",
+                    "Emergency Systems",
+                    "Explosion Proof"
+                ],
+                "applications": [
+                    "Factories",
+                    "Warehouses",
+                    "Cold Storage",
+                    "Production Lines",
+                    "Logistics Centers"
+                ],
+                "gallery": [
+                    "/images/industrial1.jpg",
+                    "/images/industrial2.jpg",
+                    "/images/industrial3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Are these suitable for cold storage?",
+                        "answer": "Yes, our fixtures operate efficiently down to -40°C."
+                    }
+                ]
+            },
+            "landscape-lighting": {
+                "title": "Landscape Lighting",
+                "heroImage": "/images/services/landscape-hero.jpg",
+                "shortDescription": "Environmentally friendly LED lighting solutions for gardens, parks and open areas.",
+                "fullDescription": "Create stunning outdoor environments with our landscape lighting solutions. We specialize in environmentally friendly LED systems that enhance natural beauty while minimizing light pollution. Perfect for parks, gardens, pathways, and architectural landscaping features.",
+                "features": [
+                    "Warm white and RGB options",
+                    "Low voltage (12V/24V) systems",
+                    "Motion and dusk-to-dawn sensors",
+                    "Tree and path uplighting",
+                    "Underwater options for fountains"
+                ],
+                "benefits": [
+                    "Extends outdoor usability",
+                    "Enhances property aesthetics",
+                    "Energy efficient (90% less than halogen)",
+                    "Wildlife friendly options",
+                    "Smart timer control"
+                ],
+                "technologies": [
+                    "Low Voltage LED",
+                    "Solar Integration",
+                    "Wireless Control",
+                    "Color Tuning",
+                    "Dark Sky Compliant"
+                ],
+                "applications": [
+                    "Public Parks",
+                    "Residential Gardens",
+                    "Hotel Grounds",
+                    "Golf Courses",
+                    "Pathways"
+                ],
+                "gallery": [
+                    "/images/landscape1.jpg",
+                    "/images/landscape2.jpg",
+                    "/images/landscape3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Are these safe for wet areas?",
+                        "answer": "Yes, we provide IP67 and IP68 rated fixtures for fountains and water features."
+                    }
+                ]
+            },
+            "road-lighting": {
+                "title": "Road Lighting",
+                "heroImage": "/images/services/road-hero.jpg",
+                "shortDescription": "Safe and economical lighting systems for urban and intercity roads.",
+                "fullDescription": "Ensure safe roadways with our professional road lighting solutions. Our systems meet international standards for illumination levels while reducing energy consumption. We provide complete solutions for highways, urban streets, tunnels, and pedestrian crossings.",
+                "features": [
+                    "IESNA and CIE compliant",
+                    "Smart dimming capabilities",
+                    "Remote monitoring and control",
+                    "Surge protection (10kV)",
+                    "Easy retrofit options"
+                ],
+                "benefits": [
+                    "Improved driver and pedestrian safety",
+                    "Reduced accident rates",
+                    "Energy savings up to 70%",
+                    "Lower CO2 emissions",
+                    "5-7 year ROI"
+                ],
+                "technologies": [
+                    "LED Streetlights",
+                    "Central Management System",
+                    "Adaptive Lighting",
+                    "Telemanagement",
+                    "Solar Hybrid"
+                ],
+                "applications": [
+                    "Highways",
+                    "Urban Streets",
+                    "Tunnels",
+                    "Roundabouts",
+                    "Pedestrian Crossings"
+                ],
+                "gallery": [
+                    "/images/road1.jpg",
+                    "/images/road2.jpg",
+                    "/images/road3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "How is maintenance handled?",
+                        "answer": "We offer remote monitoring and scheduled maintenance contracts."
+                    }
+                ]
+            },
+            "energy-solutions": {
+                "title": "Energy Solutions",
+                "heroImage": "/images/services/energy-hero.jpg",
+                "shortDescription": "Lighting systems integrated with renewable energy sources.",
+                "fullDescription": "Reduce your carbon footprint with our renewable energy integrated lighting solutions. We combine solar, wind, and energy storage technologies with efficient LED lighting to create truly sustainable systems. Perfect for off-grid applications and organizations committed to net-zero goals.",
+                "features": [
+                    "Solar PV integration",
+                    "Battery storage systems",
+                    "Grid-tied and off-grid options",
+                    "Energy monitoring dashboard",
+                    "Automatic failover"
+                ],
+                "benefits": [
+                    "Zero electricity costs after ROI",
+                    "Energy independence",
+                    "Government incentives eligible",
+                    "Carbon neutral operation",
+                    "10-15 year system life"
+                ],
+                "technologies": [
+                    "Solar LED",
+                    "Lithium Batteries",
+                    "MPPT Controllers",
+                    "Smart Inverters",
+                    "Energy Analytics"
+                ],
+                "applications": [
+                    "Remote Areas",
+                    "Parking Lots",
+                    "Billboards",
+                    "Bus Stops",
+                    "Emergency Systems"
+                ],
+                "gallery": [
+                    "/images/energy1.jpg",
+                    "/images/energy2.jpg",
+                    "/images/energy3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "What happens on cloudy days?",
+                        "answer": "Battery storage provides 3-5 days of backup power."
+                    }
+                ]
+            },
+            "smart-systems": {
+                "title": "Smart Systems",
+                "heroImage": "/images/services/smart-hero.jpg",
+                "shortDescription": "IoT-based smart lighting control and management systems.",
+                "fullDescription": "Transform your lighting into an intelligent network with our IoT-based smart systems. Real-time monitoring, predictive maintenance, and automated control reduce operational costs while maximizing efficiency. Integrate with existing BMS, HVAC, and security systems for complete building automation.",
+                "features": [
+                    "Cloud-based management platform",
+                    "Real-time energy monitoring",
+                    "Predictive maintenance alerts",
+                    "Occupancy and daylight harvesting",
+                    "API for third-party integration"
+                ],
+                "benefits": [
+                    "Up to 80% additional energy savings",
+                    "Reduced maintenance costs",
+                    "Enhanced user comfort",
+                    "Data-driven decisions",
+                    "Scalable from 10 to 10,000+ lights"
+                ],
+                "technologies": [
+                    "IoT Sensors",
+                    "LoRaWAN",
+                    "Zigbee",
+                    "MQTT",
+                    "AI Analytics"
+                ],
+                "applications": [
+                    "Smart Buildings",
+                    "Campuses",
+                    "Smart Cities",
+                    "Parking Garages",
+                    "Offices"
+                ],
+                "gallery": [
+                    "/images/smart1.jpg",
+                    "/images/smart2.jpg",
+                    "/images/smart3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Is this compatible with existing systems?",
+                        "answer": "Yes, our open API integrates with major BMS platforms."
+                    }
+                ]
+            }
+        },
+        "common": {
+            "loading": "Loading...",
+            "overview": "Overview",
+            "keyFeatures": "Key Features",
+            "benefits": "Benefits",
+            "technologies": "Technologies",
+            "applications": "Applications",
+            "faq": "Frequently Asked Questions",
+            "readyToStart": "Ready to Get Started?",
+            "contactForQuote": "Contact us for a free consultation and quote",
+            "contactUs": "Contact Us",
+            "backToServices": "Back to Services"
         }
     }
 }

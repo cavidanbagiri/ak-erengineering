@@ -190,14 +190,23 @@
                 "home": "Ana Sayfa",
                 "about": "Hakkımızda",
                 "services": "Hizmetler",
+                "technical": "Teknik Hizmetler",
                 "portfolio": "Projeler",
                 "contact": "İletişim"
             },
             "dropdown": {
-                "facade": "Cephe Aydınlatması",
+                "facade": "Cephe Aydınlatma",
                 "industrial": "Endüstriyel Aydınlatma",
-                "landscape": "Peyzaj Aydınlatması",
-                "smart": "Akıllı Sistemler"
+                "landscape": "Peyzaj Aydınlatma",
+                "road": "Yol Aydınlatma",
+                "energy": "Enerji Çözümleri",
+                "smart": "Akıllı Sistemler",
+                "electricalPanel": "Elektrik Panosu İmalatı",
+                "mechanicalDrive": "Mekanik Tahrik Sistemleri",
+                "bms": "BMS (Bina Yönetimi)",
+                "ddc": "DDC Kontrol Cihazları",
+                "prover": "Prover / Test Cihazları",
+                "mechanicalInstallation": "Mekanik Tesisat"
             },
             "buttons": {
                 "getQuote": "Teklif Al"
@@ -230,6 +239,331 @@
             "buttons": {
                 "readMore": "Daha Fazla"
             }
+        },
+        "technicalServices": {
+            "sectionHeader": {
+                "subtitle": "Teknik Altyapı",
+                "title": "Otomasyon & Kontrol Sistemleri",
+                "description": "Endüstriyel otomasyon ve bina yönetim sistemleri için profesyonel çözümler"
+            },
+            "list": [
+                {
+                    "title": "Elektrik Panosu İmalatı",
+                    "description": "Endüstriyel tesisler ve binalar için özel tasarım elektrik dağıtım ve kontrol panoları."
+                },
+                {
+                    "title": "Mekanik Tahrik Sistemleri (Şaft/Mil)",
+                    "description": "Dönme hareketi aktarımı için mil ve şaft sistemleri imalatı ve montajı."
+                },
+                {
+                    "title": "BMS (Bina Yönetim Sistemi)",
+                    "description": "HVAC, aydınlatma, güvenlik ve enerji yönetimini tek merkezden kontrol eden sistemler."
+                },
+                {
+                    "title": "DDC Kontrol Cihazları",
+                    "description": "Sensör ve aktüatör yönetimi için doğrudan dijital kontrol sistemleri."
+                },
+                {
+                    "title": "Prover / Test Cihazları",
+                    "description": "Akış ölçer ve sensör doğrulama, kalibrasyon ve test sistemleri."
+                },
+                {
+                    "title": "Mekanik Tesisat Montajı",
+                    "description": "Pompa, vana, boru ve mekanik ekipman kurulum hizmetleri."
+                }
+            ],
+            "buttons": {
+                "learnMore": "Detaylı Bilgi"
+            }
+        },
+        "serviceDetails": {
+            "facade-lighting": {
+                "title": "Cephe Aydınlatması",
+                "heroImage": "/images/services/facade-hero.jpg",
+                "shortDescription": "Modern bina cepheleri için özel LED çözümleriyle estetik ve enerji verimliliği.",
+                "fullDescription": "Cephe aydınlatma çözümlerimiz, binaları karanlıktan sonra mimari şaheserlere dönüştürür. Son teknoloji LED teknolojisini kullanarak estetiği enerji verimliliğiyle birleştiriyoruz. İster bir kurumsal merkez, ister otel veya konut kompleksi olsun, özel tasarımlarımız her yapının benzersiz mimari özelliklerini vurgular.",
+                "features": [
+                    "Özel DMX kontrollü LED sistemleri",
+                    "Enerji verimli (%70'e varan tasarruf)",
+                    "Hava koşullarına dayanıklı IP65+ derecelendirmesi",
+                    "Dinamik renk değiştirme yetenekleri",
+                    "Bina otomasyonuyla kolay entegrasyon"
+                ],
+                "benefits": [
+                    "Marka imajını ve görünürlüğü artırır",
+                    "Mülk değerini yükseltir",
+                    "Düşük bakım maliyetleri",
+                    "Azaltılmış karbon ayak izi",
+                    "Akıllı planlama ve otomasyon"
+                ],
+                "technologies": [
+                    "DMX512",
+                    "DALI",
+                    "Ethernet/IP",
+                    "Kablosuz Kontrol",
+                    "Hareket Sensörleri"
+                ],
+                "applications": [
+                    "Ticari Binalar",
+                    "Oteller",
+                    "Kamu Binaları",
+                    "Konut Kompleksleri",
+                    "Tarihi Yerler"
+                ],
+                "gallery": [
+                    "/images/facade1.jpg",
+                    "/images/facade2.jpg",
+                    "/images/facade3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Kurulum ne kadar sürer?",
+                        "answer": "Kurulum, bina büyüklüğüne ve karmaşıklığına bağlı olarak tipik olarak 2-4 hafta sürer."
+                    },
+                    {
+                        "question": "LED sistemlerinin ömrü nedir?",
+                        "answer": "LED sistemlerimiz 50.000+ saat dayanır (normal kullanımda yaklaşık 10-15 yıl)."
+                    }
+                ]
+            },
+            "industrial-lighting": {
+                "title": "Endüstriyel Aydınlatma",
+                "heroImage": "/images/services/industrial-hero.jpg",
+                "shortDescription": "Fabrikalar, depolar ve endüstriyel tesisler için profesyonel aydınlatma sistemleri.",
+                "fullDescription": "Endüstriyel ortamlar, sağlam ve yüksek performanslı aydınlatma çözümleri gerektirir. Endüstriyel aydınlatma sistemlerimiz, güvenlik ve üretkenlik için optimum aydınlatma sağlarken zorlu koşullara dayanacak şekilde tasarlanmıştır. Yüksek tavanlı LED armatürlerden patlamaya dayanıklı aydınlatmaya kadar her endüstriyel uygulama için çözümlerimiz var.",
+                "features": [
+                    "Yüksek lümen çıkışı (150+ lm/W)",
+                    "Çalışma sıcaklığı -40°C ila +60°C",
+                    "Darbeye ve titreşime dayanıklı",
+                    "Acil durum yedekleme seçenekleri",
+                    "Tehlikeli alan derecelendirmeleri"
+                ],
+                "benefits": [
+                    "İyileştirilmiş işçi güvenliği",
+                    "Azaltılmış enerji maliyetleri (%60-80 tasarruf)",
+                    "Minimum bakım gereksinimleri",
+                    "Artırılmış üretkenlik",
+                    "5-10 yıl garanti"
+                ],
+                "technologies": [
+                    "Yüksek Tavanlı LED",
+                    "Sensörler",
+                    "Gün Işığından Yararlanma",
+                    "Acil Durum Sistemleri",
+                    "Patlamaya Dayanıklı"
+                ],
+                "applications": [
+                    "Fabrikalar",
+                    "Depolar",
+                    "Soğuk Hava Depoları",
+                    "Üretim Hatları",
+                    "Lojistik Merkezleri"
+                ],
+                "gallery": [
+                    "/images/industrial1.jpg",
+                    "/images/industrial2.jpg",
+                    "/images/industrial3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Bunlar soğuk hava depoları için uygun mu?",
+                        "answer": "Evet, armatürlerimiz -40°C'ye kadar verimli bir şekilde çalışır."
+                    }
+                ]
+            },
+            "landscape-lighting": {
+                "title": "Peyzaj Aydınlatması",
+                "heroImage": "/images/services/landscape-hero.jpg",
+                "shortDescription": "Bahçeler, parklar ve açık alanlar için çevre dostu LED aydınlatma çözümleri.",
+                "fullDescription": "Peyzaj aydınlatma çözümlerimizle çarpıcı dış mekan ortamları yaratın. Doğal güzelliği vurgularken ışık kirliliğini en aza indiren çevre dostu LED sistemlerinde uzmanlaşıyoruz. Parklar, bahçeler, yürüyüş yolları ve mimari peyzaj özellikleri için mükemmeldir.",
+                "features": [
+                    "Sıcak beyaz ve RGB seçenekleri",
+                    "Düşük voltajlı (12V/24V) sistemler",
+                    "Hareket ve alacakaranlıktan şafağa sensörler",
+                    "Ağaç ve yol alt aydınlatması",
+                    "Fıskiyeler için su altı seçenekleri"
+                ],
+                "benefits": [
+                    "Dış mekan kullanılabilirliğini artırır",
+                    "Mülk estetiğini geliştirir",
+                    "Enerji verimli (halojenden %90 daha az)",
+                    "Yaban hayatı dostu seçenekler",
+                    "Akıllı zamanlayıcı kontrolü"
+                ],
+                "technologies": [
+                    "Düşük Voltajlı LED",
+                    "Güneş Enerjisi Entegrasyonu",
+                    "Kablosuz Kontrol",
+                    "Renk Ayarı",
+                    "Karanlık Gökyüzü Uyumlu"
+                ],
+                "applications": [
+                    "Halka Açık Parklar",
+                    "Konut Bahçeleri",
+                    "Otel Bahçeleri",
+                    "Golf Sahaları",
+                    "Yürüyüş Yolları"
+                ],
+                "gallery": [
+                    "/images/landscape1.jpg",
+                    "/images/landscape2.jpg",
+                    "/images/landscape3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Bunlar ıslak alanlar için güvenli mi?",
+                        "answer": "Evet, fıskiyeler ve su özellikleri için IP67 ve IP68 dereceli armatürler sağlıyoruz."
+                    }
+                ]
+            },
+            "road-lighting": {
+                "title": "Yol Aydınlatması",
+                "heroImage": "/images/services/road-hero.jpg",
+                "shortDescription": "Şehir içi ve şehirlerarası yollar için güvenli ve ekonomik aydınlatma sistemleri.",
+                "fullDescription": "Profesyonel yol aydınlatma çözümlerimizle güvenli yollar sağlayın. Sistemlerimiz, enerji tüketimini azaltırken aydınlatma seviyeleri için uluslararası standartları karşılar. Otoyollar, şehir içi caddeler, tüneller ve yaya geçitleri için eksiksiz çözümler sunuyoruz.",
+                "features": [
+                    "IESNA ve CIE uyumlu",
+                    "Akıllı kısma yetenekleri",
+                    "Uzaktan izleme ve kontrol",
+                    "Aşırı gerilim koruması (10kV)",
+                    "Kolay yenileme seçenekleri"
+                ],
+                "benefits": [
+                    "İyileştirilmiş sürücü ve yaya güvenliği",
+                    "Azaltılmış kaza oranları",
+                    "%70'e varan enerji tasarrufu",
+                    "Daha düşük CO2 emisyonları",
+                    "5-7 yıl geri ödeme süresi"
+                ],
+                "technologies": [
+                    "LED Sokak Lambaları",
+                    "Merkezi Yönetim Sistemi",
+                    "Uyarlanabilir Aydınlatma",
+                    "Tele Yönetim",
+                    "Güneş Hibrit"
+                ],
+                "applications": [
+                    "Otoyollar",
+                    "Şehir İçi Caddeler",
+                    "Tüneller",
+                    "Kavşaklar",
+                    "Yaya Geçitleri"
+                ],
+                "gallery": [
+                    "/images/road1.jpg",
+                    "/images/road2.jpg",
+                    "/images/road3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Bakım nasıl yapılır?",
+                        "answer": "Uzaktan izleme ve planlı bakım sözleşmeleri sunuyoruz."
+                    }
+                ]
+            },
+            "energy-solutions": {
+                "title": "Enerji Çözümleri",
+                "heroImage": "/images/services/energy-hero.jpg",
+                "shortDescription": "Yenilenebilir enerji kaynaklarıyla entegre aydınlatma sistemleri.",
+                "fullDescription": "Yenilenebilir enerji entegreli aydınlatma çözümlerimizle karbon ayak izinizi azaltın. Gerçekten sürdürülebilir sistemler oluşturmak için güneş, rüzgar ve enerji depolama teknolojilerini verimli LED aydınlatma ile birleştiriyoruz. Şebekeden bağımsız uygulamalar ve net-sıfır hedeflerine bağlı kuruluşlar için mükemmeldir.",
+                "features": [
+                    "Güneş PV entegrasyonu",
+                    "Batarya depolama sistemleri",
+                    "Şebekeye bağlı ve bağımsız seçenekler",
+                    "Enerji izleme paneli",
+                    "Otomatik yedekleme"
+                ],
+                "benefits": [
+                    "Geri ödeme sonrası sıfır elektrik maliyeti",
+                    "Enerji bağımsızlığı",
+                    "Devlet teşviklerine uygun",
+                    "Karbon nötr çalışma",
+                    "10-15 yıl sistem ömrü"
+                ],
+                "technologies": [
+                    "Güneş LED",
+                    "Lityum Bataryalar",
+                    "MPPT Kontrolörleri",
+                    "Akıllı İnvertörler",
+                    "Enerji Analitiği"
+                ],
+                "applications": [
+                    "Uzak Bölgeler",
+                    "Otoparklar",
+                    "Reklam Panoları",
+                    "Otobüs Durakları",
+                    "Acil Durum Sistemleri"
+                ],
+                "gallery": [
+                    "/images/energy1.jpg",
+                    "/images/energy2.jpg",
+                    "/images/energy3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Bulutlu günlerde ne olur?",
+                        "answer": "Batarya depolama, 3-5 günlük yedek güç sağlar."
+                    }
+                ]
+            },
+            "smart-systems": {
+                "title": "Akıllı Sistemler",
+                "heroImage": "/images/services/smart-hero.jpg",
+                "shortDescription": "Nesnelerin İnterneti (IoT) tabanlı akıllı aydınlatma kontrol ve yönetim sistemleri.",
+                "fullDescription": "IoT tabanlı akıllı sistemlerimizle aydınlatmanızı akıllı bir ağa dönüştürün. Gerçek zamanlı izleme, öngörücü bakım ve otomatik kontrol, operasyonel maliyetleri düşürürken verimliliği en üst düzeye çıkarır. Mevcut BMS, HVAC ve güvenlik sistemleriyle entegrasyon için idealdir.",
+                "features": [
+                    "Bulut tabanlı yönetim platformu",
+                    "Gerçek zamanlı enerji izleme",
+                    "Öngörücü bakım uyarıları",
+                    "Doluluk ve gün ışığından yararlanma",
+                    "Üçüncü taraf entegrasyonu için API"
+                ],
+                "benefits": [
+                    "%80'e kadar ek enerji tasarrufu",
+                    "Azaltılmış bakım maliyetleri",
+                    "Gelişmiş kullanıcı konforu",
+                    "Veri odaklı kararlar",
+                    "10'dan 10.000+ ışığa kadar ölçeklenebilir"
+                ],
+                "technologies": [
+                    "IoT Sensörleri",
+                    "LoRaWAN",
+                    "Zigbee",
+                    "MQTT",
+                    "AI Analitiği"
+                ],
+                "applications": [
+                    "Akıllı Binalar",
+                    "Kampüsler",
+                    "Akıllı Şehirler",
+                    "Otoparklar",
+                    "Ofisler"
+                ],
+                "gallery": [
+                    "/images/smart1.jpg",
+                    "/images/smart2.jpg",
+                    "/images/smart3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Bu mevcut sistemlerle uyumlu mu?",
+                        "answer": "Evet, açık API'miz büyük BMS platformlarıyla entegre olur."
+                    }
+                ]
+            }
+        },
+        "common": {
+            "loading": "Yükleniyor...",
+            "overview": "Genel Bakış",
+            "keyFeatures": "Ana Özellikler",
+            "benefits": "Avantajlar",
+            "technologies": "Teknolojiler",
+            "applications": "Kullanım Alanları",
+            "faq": "Sık Sorulan Sorular",
+            "readyToStart": "Başlamaya Hazır mısınız?",
+            "contactForQuote": "Ücretsiz danışmanlık ve teklif için bizimle iletişime geçin",
+            "contactUs": "Bize Ulaşın",
+            "backToServices": "Hizmetlere Geri Dön"
         }
     }
 }

@@ -7,6 +7,7 @@
                 "home": "Ana Səhifə",
                 "about": "Haqqımızda",
                 "services": "Xidmətlər",
+                "technical": "Texniki Xidmətlər",
                 "portfolio": "Layihələr",
                 "contact": "Əlaqə"
             },
@@ -14,7 +15,15 @@
                 "facade": "Fasad İşıqlandırması",
                 "industrial": "Sənaye İşıqlandırması",
                 "landscape": "Landşaft İşıqlandırması",
-                "smart": "Ağıllı Sistemlər"
+                "road": "Yol İşıqlandırması",
+                "energy": "Enerji Həlləri",
+                "smart": "Ağıllı Sistemlər",
+                "electricalPanel": "Elektrik Panosu İstehsalı",
+                "mechanicalDrive": "Mexaniki Ötürücü Sistemlər",
+                "bms": "BMS (Bina İdarəetmə)",
+                "ddc": "DDC Nəzarət Cihazları",
+                "prover": "Prover / Test Cihazları",
+                "mechanicalInstallation": "Mexaniki Quraşdırma"
             },
             "buttons": {
                 "getQuote": "Təklif Al"
@@ -26,7 +35,7 @@
                 }
             },
             "ariaLabels": {
-                "toggleMenu": "Menyunu keçid et"
+                "toggleMenu": "Menyunu aç/bağla"
             }
         },
         "about": {
@@ -230,6 +239,331 @@
             "buttons": {
                 "readMore": "Ətraflı Məlumat"
             }
+        },
+        "technicalServices": {
+            "sectionHeader": {
+                "subtitle": "Texniki İnfrastruktur",
+                "title": "Avtomatlaşdırma & Nəzarət Sistemləri",
+                "description": "Sənaye avtomatlaşdırması və bina idarəetmə sistemləri üçün peşəkar həllər"
+            },
+            "list": [
+                {
+                    "title": "Elektrik Panosu İstehsalı",
+                    "description": "Sənaye müəssisələri və binalar üçün xüsusi dizayn edilmiş elektrik paylanması və nəzarət panelləri."
+                },
+                {
+                    "title": "Mexaniki Ötürücü Sistemlər (Şaft/Mil)",
+                    "description": "Fırlanma hərəkətinin ötürülməsi üçün mil və şaft sistemlərinin istehsalı və quraşdırılması."
+                },
+                {
+                    "title": "BMS (Bina İdarəetmə Sistemi)",
+                    "description": "HVAC, işıqlandırma, təhlükəsizlik və enerji idarəetməsi üçün mərkəzləşdirilmiş nəzarət sistemləri."
+                },
+                {
+                    "title": "DDC Nəzarət Cihazları",
+                    "description": "Sensor və aktüator idarəetməsi üçün birbaşa rəqəmsal nəzarət sistemləri."
+                },
+                {
+                    "title": "Prover / Test Cihazları",
+                    "description": "Axış ölçən və sensorların yoxlanması, kalibrasiyası və test sistemləri."
+                },
+                {
+                    "title": "Mexaniki Quraşdırma Montajı",
+                    "description": "Pompa, klapan, boru və mexaniki avadanlıqların quraşdırılması xidmətləri."
+                }
+            ],
+            "buttons": {
+                "learnMore": "Ətraflı Məlumat"
+            }
+        },
+        "serviceDetails": {
+            "facade-lighting": {
+                "title": "Fasad işıqlandırması",
+                "heroImage": "/images/services/facade-hero.jpg",
+                "shortDescription": "Müasir bina fasadları üçün fərdi LED həlləri ilə estetika və enerji səmərəliliyi.",
+                "fullDescription": "Fasad işıqlandırma həllərimiz binaları qaranlıqdan sonra memarlıq şah əsərlərinə çevirir. Qabaqcıl LED texnologiyasından istifadə edərək estetikanı enerji səmərəliliyi ilə birləşdiririk. İstər korporativ mərkəz, istər otel, istərsə də yaşayış kompleksi olsun, fərdi dizaynlarımız hər hansı bir strukturun unikal memarlıq xüsusiyyətlərini vurğulayır.",
+                "features": [
+                    "Fərdi DMX idarə olunan LED sistemləri",
+                    "Enerji səmərəli (%70-ə qədər qənaət)",
+                    "Hava şəraitinə davamlı IP65+ reytinqi",
+                    "Dinamik rəng dəyişdirmə imkanları",
+                    "Bina avtomatlaşdırması ilə asan inteqrasiya"
+                ],
+                "benefits": [
+                    "Brend imicini və görünmə qabiliyyətini artırır",
+                    "Əmlakın dəyərini yüksəldir",
+                    "Aşağı texniki xidmət xərcləri",
+                    "Azaldılmış karbon izi",
+                    "Ağıllı planlaşdırma və avtomatlaşdırma"
+                ],
+                "technologies": [
+                    "DMX512",
+                    "DALI",
+                    "Ethernet/IP",
+                    "Simsiz İdarəetmə",
+                    "Hərəkət Sensorları"
+                ],
+                "applications": [
+                    "Kommersiya Binaları",
+                    "Otellər",
+                    "Hökumət Binaları",
+                    "Yaşayış Kompleksləri",
+                    "Tarixi Abidələr"
+                ],
+                "gallery": [
+                    "/images/facade1.jpg",
+                    "/images/facade2.jpg",
+                    "/images/facade3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Quraşdırma nə qədər vaxt aparır?",
+                        "answer": "Quraşdırma binanın ölçüsündən və mürəkkəbliyindən asılı olaraq adətən 2-4 həftə çəkir."
+                    },
+                    {
+                        "question": "LED sistemlərinin ömrü nə qədərdir?",
+                        "answer": "LED sistemlərimiz 50.000+ saat davam edir (normal istifadədə təxminən 10-15 il)."
+                    }
+                ]
+            },
+            "industrial-lighting": {
+                "title": "Sənaye işıqlandırması",
+                "heroImage": "/images/services/industrial-hero.jpg",
+                "shortDescription": "Fabriklər, anbarlar və sənaye obyektləri üçün peşəkar işıqlandırma sistemləri.",
+                "fullDescription": "Sənaye mühitləri möhkəm və yüksək performanslı işıqlandırma həlləri tələb edir. Sənaye işıqlandırma sistemlərimiz sərt şəraitə davam etmək, eyni zamanda təhlükəsizlik və məhsuldarlıq üçün optimal işıqlandırma təmin etmək üçün nəzərdə tutulmuşdur. Yüksək tavanlı LED armaturlardan partlayışa davamlı işıqlandırmaya qədər hər bir sənaye tətbiqi üçün həllərimiz var.",
+                "features": [
+                    "Yüksək lümen çıxışı (150+ lm/W)",
+                    "İşləmə temperaturu -40°C-dən +60°C-yə qədər",
+                    "Zərbəyə və vibrasiyaya davamlı",
+                    "Fövqəladə vəziyyət üçün ehtiyat variantlar",
+                    "Təhlükəli sahə reytinqləri"
+                ],
+                "benefits": [
+                    "Təkmilləşdirilmiş işçi təhlükəsizliyi",
+                    "Azaldılmış enerji xərcləri (%60-80 qənaət)",
+                    "Minimal texniki xidmət tələbləri",
+                    "Artırılmış məhsuldarlıq",
+                    "5-10 il zəmanət"
+                ],
+                "technologies": [
+                    "Yüksək Tavanlı LED",
+                    "Sensorlar",
+                    "Gün İşığından İstifadə",
+                    "Fövqəladə Hallar Sistemləri",
+                    "Partlayışa Davamlı"
+                ],
+                "applications": [
+                    "Fabriklər",
+                    "Anbarlar",
+                    "Soyuq Anbarlar",
+                    "İstehsal Xətləri",
+                    "Logistika Mərkəzləri"
+                ],
+                "gallery": [
+                    "/images/industrial1.jpg",
+                    "/images/industrial2.jpg",
+                    "/images/industrial3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Bunlar soyuq anbarlar üçün uyğundurmu?",
+                        "answer": "Bəli, armaturlarımız -40°C-ə qədər səmərəli işləyir."
+                    }
+                ]
+            },
+            "landscape-lighting": {
+                "title": "Landşaft işıqlandırması",
+                "heroImage": "/images/services/landscape-hero.jpg",
+                "shortDescription": "Bağlar, parklar və açıq sahələr üçün ekoloji cəhətdən təmiz LED işıqlandırma həlləri.",
+                "fullDescription": "Landşaft işıqlandırma həllərimizlə heyrətamiz açıq hava mühiti yaradın. Təbii gözəlliyi vurğulayarkən işıq çirklənməsini minimuma endirən ekoloji cəhətdən təmiz LED sistemlərində ixtisaslaşırıq. Parklar, bağlar, piyada yolları və memarlıq landşaft xüsusiyyətləri üçün mükəmməldir.",
+                "features": [
+                    "İsti ağ və RGB seçimləri",
+                    "Aşağı gərginlikli (12V/24V) sistemlər",
+                    "Hərəkət və alaqaranlıqdan şəfəqədək sensorlar",
+                    "Ağac və yol alt işıqlandırması",
+                    "Fəvvarələr üçün sualtı variantlar"
+                ],
+                "benefits": [
+                    "Açıq hava istifadəsini artırır",
+                    "Əmlak estetikasını yaxşılaşdırır",
+                    "Enerji səmərəli (halogendən 90% az)",
+                    "Vəhşi təbiət dostu variantlar",
+                    "Ağıllı taymer nəzarəti"
+                ],
+                "technologies": [
+                    "Aşağı Gərginlikli LED",
+                    "Günəş Enerjisi İnteqrasiyası",
+                    "Simsiz İdarəetmə",
+                    "Rəng Tənzimlənməsi",
+                    "Qaranlıq Səmaya Uyğun"
+                ],
+                "applications": [
+                    "İctimai Parklar",
+                    "Yaşayış Bağları",
+                    "Otel Əraziləri",
+                    "Qolf Sahələri",
+                    "Piyada Yolları"
+                ],
+                "gallery": [
+                    "/images/landscape1.jpg",
+                    "/images/landscape2.jpg",
+                    "/images/landscape3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Bunlar yaş sahələr üçün təhlükəsizdirmi?",
+                        "answer": "Bəli, fəvvarələr və su obyektləri üçün IP67 və IP68 reytinqli armaturlar təmin edirik."
+                    }
+                ]
+            },
+            "road-lighting": {
+                "title": "Yol işıqlandırması",
+                "heroImage": "/images/services/road-hero.jpg",
+                "shortDescription": "Şəhər və şəhərlərarası yollar üçün təhlükəsiz və iqtisadi işıqlandırma sistemləri.",
+                "fullDescription": "Peşəkar yol işıqlandırma həllərimizlə təhlükəsiz yollar təmin edin. Sistemlərimiz enerji istehlakını azaldarkən işıqlandırma səviyyələri üçün beynəlxalq standartlara cavab verir. Avtomagistrallar, şəhər küçələri, tunellər və piyada keçidləri üçün tam həllər təqdim edirik.",
+                "features": [
+                    "IESNA və CIE uyğun",
+                    "Ağıllı qaraltma imkanları",
+                    "Uzaqdan izləmə və nəzarət",
+                    "Həddindən artıq gərginlikdən mühafizə (10kV)",
+                    "Asan yeniləmə variantları"
+                ],
+                "benefits": [
+                    "Təkmilləşdirilmiş sürücü və piyada təhlükəsizliyi",
+                    "Azaldılmış qəza nisbətləri",
+                    "%70-ə qədər enerji qənaəti",
+                    "Daha aşağı CO2 emissiyaları",
+                    "5-7 il geri qayıtma müddəti"
+                ],
+                "technologies": [
+                    "LED Küçə İşıqları",
+                    "Mərkəzi İdarəetmə Sistemi",
+                    "Adaptiv İşıqlandırma",
+                    "Tele İdarəetmə",
+                    "Günəş Hibrid"
+                ],
+                "applications": [
+                    "Avtomagistrallar",
+                    "Şəhər Küçələri",
+                    "Tunellər",
+                    "Dairəvi Kavşaqlar",
+                    "Piyada Keçidləri"
+                ],
+                "gallery": [
+                    "/images/road1.jpg",
+                    "/images/road2.jpg",
+                    "/images/road3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Texniki xidmət necə həyata keçirilir?",
+                        "answer": "Uzaqdan izləmə və planlı texniki xidmət müqavilələri təklif edirik."
+                    }
+                ]
+            },
+            "energy-solutions": {
+                "title": "Enerji Həlləri",
+                "heroImage": "/images/services/energy-hero.jpg",
+                "shortDescription": "Bərpa olunan enerji mənbələri ilə inteqrasiya olunmuş işıqlandırma sistemləri.",
+                "fullDescription": "Bərpa olunan enerji inteqrasiya olunmuş işıqlandırma həllərimizlə karbon izinizi azaldın. Həqiqətən davamlı sistemlər yaratmaq üçün günəş, külək və enerji saxlama texnologiyalarını səmərəli LED işıqlandırma ilə birləşdiririk. Şəbəkədən kənar tətbiqlər və karbon neytral hədəflərinə sadiq təşkilatlar üçün mükəmməldir.",
+                "features": [
+                    "Günəş PV inteqrasiyası",
+                    "Batareya saxlama sistemləri",
+                    "Şəbəkəyə bağlı və müstəqil variantlar",
+                    "Enerji izləmə paneli",
+                    "Avtomatik ehtiyat keçid"
+                ],
+                "benefits": [
+                    "Geri qayıtmadan sonra sıfır elektrik xərcləri",
+                    "Enerji müstəqilliyi",
+                    "Dövlət təşviqlərinə uyğun",
+                    "Karbon neytral əməliyyat",
+                    "10-15 il sistem ömrü"
+                ],
+                "technologies": [
+                    "Günəş LED",
+                    "Litium Batareyalar",
+                    "MPPT Nəzarətçiləri",
+                    "Ağıllı İnvertorlar",
+                    "Enerji Analitikası"
+                ],
+                "applications": [
+                    "Uzaq Ərazilər",
+                    "Dayanacaqlar",
+                    "Reklam Tabeləri",
+                    "Avtobus Dayanacaqları",
+                    "Fövqəladə Hallar Sistemləri"
+                ],
+                "gallery": [
+                    "/images/energy1.jpg",
+                    "/images/energy2.jpg",
+                    "/images/energy3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Buludlu günlərdə nə baş verir?",
+                        "answer": "Batareya saxlama sistemi 3-5 günlük ehtiyat enerji təmin edir."
+                    }
+                ]
+            },
+            "smart-systems": {
+                "title": "Ağıllı Sistemlər",
+                "heroImage": "/images/services/smart-hero.jpg",
+                "shortDescription": "IoT əsaslı ağıllı işıqlandırma nəzarət və idarəetmə sistemləri.",
+                "fullDescription": "IoT əsaslı ağıllı sistemlərimizlə işıqlandırmanızı ağıllı şəbəkəyə çevirin. Real vaxt rejimində izləmə, proqnozlaşdırıcı texniki xidmət və avtomatik idarəetmə əməliyyat xərclərini azaldır, eyni zamanda səmərəliliyi maksimuma çatdırır. Tam bina avtomatlaşdırması üçün mövcud BMS, HVAC və təhlükəsizlik sistemləri ilə inteqrasiya edin.",
+                "features": [
+                    "Bulud əsaslı idarəetmə platforması",
+                    "Real vaxt rejimində enerji izləmə",
+                    "Proqnozlaşdırıcı texniki xidmət xəbərdarlıqları",
+                    "Doluluq və gün işığından istifadə",
+                    "Üçüncü tərəf inteqrasiyası üçün API"
+                ],
+                "benefits": [
+                    "%80-ə qədər əlavə enerji qənaəti",
+                    "Azaldılmış texniki xidmət xərcləri",
+                    "Təkmilləşdirilmiş istifadəçi rahatlığı",
+                    "Məlumatlara əsaslanan qərarlar",
+                    "10-dan 10.000+ işığa qədər miqyaslana bilən"
+                ],
+                "technologies": [
+                    "IoT Sensorları",
+                    "LoRaWAN",
+                    "Zigbee",
+                    "MQTT",
+                    "Süni İntellekt Analitikası"
+                ],
+                "applications": [
+                    "Ağıllı Binalar",
+                    "Kampuslar",
+                    "Ağıllı Şəhərlər",
+                    "Qarajlar",
+                    "Ofislər"
+                ],
+                "gallery": [
+                    "/images/smart1.jpg",
+                    "/images/smart2.jpg",
+                    "/images/smart3.jpg"
+                ],
+                "faq": [
+                    {
+                        "question": "Bu mövcud sistemlərlə uyğundurmu?",
+                        "answer": "Bəli, açıq API-miz əsas BMS platformaları ilə inteqrasiya olunur."
+                    }
+                ]
+            }
+        },
+        "common": {
+            "loading": "Yüklənir...",
+            "overview": "Ümumi Baxış",
+            "keyFeatures": "Əsas Xüsusiyyətlər",
+            "benefits": "Üstünlüklər",
+            "technologies": "Texnologiyalar",
+            "applications": "Tətbiq Sahələri",
+            "faq": "Tez-tez Verilən Suallar",
+            "readyToStart": "Başlamağa Hazırsınız?",
+            "contactForQuote": "Pulsuz məsləhət və təklif üçün bizimlə əlaqə saxlayın",
+            "contactUs": "Bizimlə Əlaqə",
+            "backToServices": "Xidmətlərə Geri Dön"
         }
     }
 }
