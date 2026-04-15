@@ -34,12 +34,12 @@ function Services() {
 
     // Map icons and gradients to services
     const serviceDetails = [
-        { icon: '💡', gradient: 'from-yellow-500 to-orange-500' },
-        { icon: '🏢', gradient: 'from-blue-500 to-cyan-500' },
-        { icon: '🌳', gradient: 'from-green-500 to-emerald-500' },
-        { icon: '🛣️', gradient: 'from-purple-500 to-pink-500' },
-        { icon: '⚡', gradient: 'from-red-500 to-orange-500' },
-        { icon: '🤖', gradient: 'from-indigo-500 to-purple-500' }
+        { icon: '💡', gradient: 'from-yellow-500 to-orange-500', route: '/services/facade-lighting' },
+        { icon: '🏢', gradient: 'from-blue-500 to-cyan-500', route: '/services/industrial-lighting' },
+        { icon: '🌳', gradient: 'from-green-500 to-emerald-500', route: '/services/landscape-lighting' },
+        { icon: '🛣️', gradient: 'from-purple-500 to-pink-500', route: '/services/road-lighting' },
+        { icon: '⚡', gradient: 'from-red-500 to-orange-500', route: '/services/energy-solutions' },
+        { icon: '🤖', gradient: 'from-indigo-500 to-purple-500', route: '/services/smart-systems' }
     ]
 
     // Combine translated service names with icons and gradients
@@ -47,7 +47,8 @@ function Services() {
         title: service,
         description: getServiceDescription(service),
         icon: serviceDetails[index]?.icon || '🔧',
-        gradient: serviceDetails[index]?.gradient || 'from-gray-500 to-gray-600'
+        gradient: serviceDetails[index]?.gradient || 'from-gray-500 to-gray-600',
+        route: serviceDetails[index]?.route
     }))
 
     // Technical service icons and gradients
@@ -241,7 +242,7 @@ function Services() {
                                 
                                 {/* Read more link */}
                                 <div className="mt-6 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                                    <Link to="/services" className="text-yellow-400 text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                                    <Link to={service.route} className="text-yellow-400 text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
                                         {t('services.buttons.readMore')}
                                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
