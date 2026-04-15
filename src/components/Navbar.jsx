@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './LanguageSwitcher'
+import logo from '../assets/logo.png'
 
 function Navbar() {
     const { t } = useTranslation()
@@ -87,16 +88,12 @@ function Navbar() {
                     <div className="flex justify-between items-center h-16 md:h-20">
                         {/* Logo */}
                         <Link to="/" className="relative group flex items-center space-x-2">
-                            <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
-                                <span className="text-gray-900 font-bold text-lg">L</span>
+                            <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
+                                <img src={logo}
+                                className="text-gray-900 w-24 h-12"/>
                             </div>
                             <div>
-                                <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-                                    {t('navbar.logo')}<span className="text-yellow-500">O</span>
-                                </div>
-                                <div className="text-xs text-gray-400 hidden md:block">
-                                    {t('navbar.brandSuffix')}
-                                </div>
+                                <span className='text-white'>Engineering</span>
                             </div>
                         </Link>
 

@@ -1,7 +1,7 @@
 {
     "az": {
         "navbar": {
-            "logo": "Lineo",
+            "logo": "Ak-Er Engineering",
             "brandSuffix": "İşıqlandırma",
             "navItems": {
                 "home": "Ana Səhifə",
@@ -41,7 +41,7 @@
         "about": {
             "title": "Haqqımızda",
             "subtitle": "Vizyonumuz və missiyamız ilə işıqlandırma sektorunda fərq yaradırıq",
-            "companyName": "Lineo İşıqlandırma",
+            "companyName": "Ak-Er Engineering",
             "yearsOfExperience": "20+ İllik Təcrübə",
             "description1": "2003-cü ildən bəri işıqlandırma sektorunda fəaliyyət göstərən şirkətimiz, Türkiyənin ən böyük işıqlandırma layihələrinə imza atmışdır.",
             "description2": "Mütəxəssis mühəndis kadromuz və son texnologiya avadanlıqlarımızla, müştərilərimizə ən keyfiyyətli xidməti təqdim etməyi hədəfləyirik.",
@@ -91,7 +91,7 @@
             },
             "sectionHeader": {
                 "subtitle": "Haqqımızda",
-                "title": "Lineo İşıqlandırma",
+                "title": "Ak-Er Engineering",
                 "description": "Vizyonumuz və missiyamız ilə işıqlandırma sektorunda fərq yaradırıq"
             }
         },
@@ -111,6 +111,21 @@
                     "title": "Ağıllı İşıqlandırma",
                     "highlightedText": "Avtomatlaşdırma Sistemləri",
                     "description": "DALI, DMX, KNX kimi qabaqcıl avtomatlaşdırma sistemləri ilə enerji səmərəliliyini artırır, istifadə rahatlığını maksimum səviyyəyə qaldırırıq."
+                },
+                {
+                    "title": "Fasad İşıqlandırması",
+                    "highlightedText": "Memarlıq İşıqlandırması",
+                    "description": "Binaların memarlıq xüsusiyyətlərini ön plana çıxaran, enerji səmərəli LED fasad işıqlandırma sistemləri. Gecə vaxtı binalarınıza dəyər qatın."
+                },
+                {
+                    "title": "Landşaft İşıqlandırması",
+                    "highlightedText": "Bağ və Park İşıqlandırması",
+                    "description": "Bağlar, parklar və açıq sahələr üçün ekoloji dostu LED işıqlandırma həlləri. Təbii gözəlliyi qoruyan, enerji səmərəli sistemlər."
+                },
+                {
+                    "title": "Sənaye İşıqlandırması",
+                    "highlightedText": "Fabrik və Anbar İşıqlandırması",
+                    "description": "Sənaye obyektləri, fabriklər və anbarlar üçün peşəkar işıqlandırma sistemləri. Yüksək davamlılıq, optimal işıqlandırma və təhlükəsizlik."
                 }
             ],
             "buttons": {
@@ -173,7 +188,7 @@
         },
         "footer": {
             "companyInfo": {
-                "brandName": "Lineo",
+                "brandName": "Ak-Er Engineering",
                 "brandSuffix": "İşıqlandırma",
                 "description": "İşıqlandırma mühəndisliyində innovativ həllər təqdim edən Türkiyənin aparıcı şirkətlərindən biriyik. 20+ illik təcrübəmizlə keyfiyyət və etibarlılığı bir yerdə təqdim edirik."
             },
@@ -200,9 +215,9 @@
             },
             "contact": {
                 "title": "Bizimlə Əlaqə",
-                "address": "İstanbul, Türkiyə",
-                "phone": "+90 (212) 123 45 67",
-                "email": "info@lineo.com.tr",
+                "address": "Baku, Azerbaijan",
+                "phone": "+994 (51) 590 01 24",
+                "email": "zubeyir@ak-erengineering",
                 "hours": "B.e. - Cüm: 09:00 - 18:00"
             },
             "newsletter": {
@@ -212,7 +227,7 @@
                 "successMessage": "✓ Uğurla abunə oldunuz!"
             },
             "bottom": {
-                "copyright": "© {{year}} Lineo İşıqlandırma Mühəndisliyi. Bütün hüquqlar qorunur.",
+                "copyright": "© {{year}} Ak-Er Engineering İşıqlandırma Mühəndisliyi. Bütün hüquqlar qorunur.",
                 "privacyPolicy": "Gizlilik Siyasəti",
                 "termsOfUse": "İstifadə Şərtləri",
                 "cookiePolicy": "Kuki Siyasəti"

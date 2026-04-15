@@ -4,6 +4,8 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 
+import { Link, NavLink, useLocation } from 'react-router-dom'
+
 import photo1 from '../assets/images/photo_1.webp'
 import photo2 from '../assets/images/photo_2.jpg'
 import photo3 from '../assets/images/photo_1.webp'
@@ -19,12 +21,12 @@ function CarouselAdvanced() {
     // Get slides from translation file
     const slidesData = t('carousel.slides', { returnObjects: true }) || [];
 
-     // Map imported images to slides
+    // Map imported images to slides
     const slides = slidesData.map((slide, index) => ({
         ...slide,
         image: [photo1, photo2, photo3][index] || photo1
     }));
-    
+
     // If slides array is empty, provide fallback (prevents errors)
     const hasSlides = slides.length > 0;
 
@@ -48,7 +50,7 @@ function CarouselAdvanced() {
         if (isPlaying && hasSlides) {
             const duration = 5000; // 5 seconds
             const interval = 50; // Update every 50ms
-            
+
             timerRef.current = setInterval(() => {
                 setProgress((prev) => {
                     if (prev >= 100) {
@@ -59,7 +61,7 @@ function CarouselAdvanced() {
                 });
             }, interval);
         }
-        
+
         return () => {
             if (timerRef.current) {
                 clearInterval(timerRef.current);
@@ -77,7 +79,7 @@ function CarouselAdvanced() {
     }
 
     return (
-        <div 
+        <div
             className="relative w-full overflow-hidden group"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -88,14 +90,13 @@ function CarouselAdvanced() {
                 {slides.map((slide, idx) => (
                     <div
                         key={idx}
-                        className={`absolute inset-0 transition-opacity duration-700 ${
-                            idx === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
-                        }`}
+                        className={`absolute inset-0 transition-opacity duration-700 ${idx === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                            }`}
                     >
                         {/* Background */}
-                        <div 
+                        <div
                             className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 transition-transform duration-700"
-                            style={{ 
+                            style={{
                                 backgroundImage: `url(${slide.image})`,
                                 transform: idx === currentIndex ? 'scale(1)' : 'scale(1.05)'
                             }}
@@ -106,11 +107,10 @@ function CarouselAdvanced() {
                         {/* Content */}
                         <div className="relative h-full flex items-center">
                             <div className="container mx-auto px-4 md:px-6 lg:px-8">
-                                <div className={`max-w-3xl transition-all duration-700 delay-200 ${
-                                    idx === currentIndex 
-                                        ? 'opacity-100 translate-x-0' 
+                                <div className={`max-w-3xl transition-all duration-700 delay-200 ${idx === currentIndex
+                                        ? 'opacity-100 translate-x-0'
                                         : 'opacity-0 -translate-x-10'
-                                }`}>
+                                    }`}>
                                     {/* Slide Number */}
                                     <div className="flex items-center space-x-3 mb-6">
                                         <span className="text-yellow-400 font-mono text-sm tracking-wider">
@@ -131,14 +131,16 @@ function CarouselAdvanced() {
                                     <p className="text-base md:text-lg text-gray-200 mb-8 leading-relaxed max-w-2xl">
                                         {slide.description}
                                     </p>
-                                    
+
                                     <div className="flex flex-col sm:flex-row gap-4">
-                                        <button className="px-8 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                                        <Link to={'/services'}
+                                            className="px-8 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                                             {t('carousel.buttons.explore')}
-                                        </button>
-                                        <button className="px-8 py-3 border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300">
+                                        </Link>
+                                        <Link to={'/contact'}
+                                            className="px-8 py-3 border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300">
                                             {t('carousel.buttons.contact')}
-                                        </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -147,36 +149,36 @@ function CarouselAdvanced() {
                 ))}
 
                 {/* Navigation Arrows */}
-                <button 
+                <button
                     onClick={prevSlide}
-                    className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white rounded-full p-3 transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100 backdrop-blur-sm"
+                    className="absolute left-2 sm:left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 opacity-50 sm:p-3 transition-all duration-300 backdrop-blur-sm shadow-lg active:scale-95"
                     aria-label={t('carousel.ariaLabels.previousSlide')}
                 >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
 
-                <button 
+                <button
                     onClick={nextSlide}
-                    className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 bg-black/30 hover:bg-black/50 text-white rounded-full p-3 transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100 backdrop-blur-sm"
+                    className="absolute right-2 sm:right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 opacity-50 sm:p-3 transition-all duration-300 backdrop-blur-sm shadow-lg active:scale-95"
                     aria-label={t('carousel.ariaLabels.nextSlide')}
                 >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                 </button>
 
                 {/* Progress Bar */}
                 <div className="absolute bottom-0 left-0 right-0 z-20 h-1 bg-white/20">
-                    <div 
+                    <div
                         className="h-full bg-yellow-400 transition-all duration-50 ease-linear"
                         style={{ width: `${progress}%` }}
                     />
                 </div>
 
                 {/* Thumbnail Navigation */}
-                <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
+                <div className="absolute bottom-2 xl:bottom-8 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
                     {slides.map((slide, idx) => (
                         <button
                             key={idx}
@@ -184,13 +186,12 @@ function CarouselAdvanced() {
                             className="group relative"
                             aria-label={t('carousel.ariaLabels.goToSlide', { index: idx + 1 })}
                         >
-                            <div className={`w-16 h-16 rounded-lg overflow-hidden transition-all duration-300 ${
-                                currentIndex === idx 
-                                    ? 'ring-2 ring-yellow-400 scale-110' 
+                            <div className={`w-16 h-16 rounded-lg overflow-hidden transition-all duration-300 ${currentIndex === idx
+                                    ? 'ring-2 ring-yellow-400 scale-110'
                                     : 'opacity-60 hover:opacity-100'
-                            }`}>
-                                <img 
-                                    src={slide.image} 
+                                }`}>
+                                <img
+                                    src={slide.image}
                                     alt={`Thumbnail ${idx + 1}`}
                                     className="w-full h-full object-cover"
                                 />

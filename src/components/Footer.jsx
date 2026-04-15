@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
+import logo from '../assets/logo.png'
 
 function Footer() {
     const { t } = useTranslation()
@@ -46,11 +47,20 @@ function Footer() {
                     {/* Company Info */}
                     <div className="space-y-4">
                         <div className="flex items-center space-x-2">
-                            <div className="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+                            {/* <div className="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
                                 {t('footer.companyInfo.brandName')}<span className="text-yellow-500">O</span>
                             </div>
                             <div className="w-1 h-8 bg-yellow-400 rounded-full"></div>
-                            <span className="text-gray-400 text-sm">{t('footer.companyInfo.brandSuffix')}</span>
+                            <span className="text-gray-400 text-sm">{t('footer.companyInfo.brandSuffix')}</span> */}
+                            <Link to="/" className="relative group flex items-center space-x-2">
+                                                        <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
+                                                            <img src={logo}
+                                                            className="text-gray-900 w-24 h-12"/>
+                                                        </div>
+                                                        <div>
+                                                            <span className='text-white'>Engineering</span>
+                                                        </div>
+                                                    </Link>
                         </div>
                         
                         <p className="text-gray-300 text-sm leading-relaxed">

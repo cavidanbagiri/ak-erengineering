@@ -3,7 +3,7 @@
         "about": {
             "title": "About Us",
             "subtitle": "We make a difference in the lighting industry with our vision and mission",
-            "companyName": "Lineo Lighting",
+            "companyName": "Ak-Er Engineering",
             "yearsOfExperience": "20+ Years of Experience",
             "description1": "Since 2003, our company has been operating in the lighting sector and has signed Turkey's largest lighting projects.",
             "description2": "With our expert engineering team and state-of-the-art equipment, we aim to provide the highest quality service to our customers.",
@@ -53,7 +53,7 @@
             },
             "sectionHeader": {
                 "subtitle": "About Us",
-                "title": "Lineo Lighting",
+                "title": "Ak-Er Engineering",
                 "description": "We make a difference in the lighting sector with our vision and mission"
             }
         },
@@ -62,17 +62,32 @@
                 {
                     "title": "In Lighting Engineering",
                     "highlightedText": "Innovative Solutions",
-                    "description": "With over 20 years of experience, as Turkey's leading lighting engineering company, we offer energy-efficient, environmentally friendly and aesthetic lighting solutions."
+                    "description": "With over 20 years of experience, as Turkey's leading lighting engineering company, we offer energy-efficient, eco-friendly, and aesthetic lighting solutions."
                 },
                 {
                     "title": "Electrical Contracting",
                     "highlightedText": "Professional Services",
-                    "description": "We strengthen your space with modern systems and are with you at every stage from design to implementation."
+                    "description": "We power your space with modern systems and stand by you at every stage, from design to implementation."
                 },
                 {
                     "title": "Smart Lighting",
                     "highlightedText": "Automation Systems",
-                    "description": "We increase energy efficiency and maximize user comfort with advanced automation systems such as DALI, DMX, KNX."
+                    "description": "With advanced automation systems like DALI, DMX, and KNX, we increase energy efficiency and maximize ease of use."
+                },
+                {
+                    "title": "Facade Lighting",
+                    "highlightedText": "Architectural Lighting",
+                    "description": "Energy-efficient LED facade lighting systems that highlight the architectural features of buildings. Add value to your buildings at night."
+                },
+                {
+                    "title": "Landscape Lighting",
+                    "highlightedText": "Garden and Park Lighting",
+                    "description": "Eco-friendly LED lighting solutions for gardens, parks, and open areas. Energy-efficient systems that preserve natural beauty."
+                },
+                {
+                    "title": "Industrial Lighting",
+                    "highlightedText": "Factory and Warehouse Lighting",
+                    "description": "Professional lighting systems for industrial facilities, factories, and warehouses. High durability, optimal lighting, and safety."
                 }
             ],
             "buttons": {
@@ -135,7 +150,7 @@
         },
         "footer": {
             "companyInfo": {
-                "brandName": "Lineo",
+                "brandName": "Ak-Er Engineering",
                 "brandSuffix": "Lighting",
                 "description": "We are one of Turkey's leading companies offering innovative solutions in lighting engineering. With our 20+ years of experience, we offer quality and reliability together."
             },
@@ -162,9 +177,9 @@
             },
             "contact": {
                 "title": "Contact Us",
-                "address": "Istanbul, Turkey",
-                "phone": "+90 (212) 123 45 67",
-                "email": "info@lineo.com.tr",
+                "address": "Baku, Azerbaijan",
+                "phone": "+994 (51) 590 01 24",
+                "email": "zubeyir@ak-erengineering",
                 "hours": "Mon - Fri: 09:00 - 18:00"
             },
             "newsletter": {
@@ -174,7 +189,7 @@
                 "successMessage": "✓ Successfully subscribed!"
             },
             "bottom": {
-                "copyright": "© {{year}} Lineo Lighting Engineering. All rights reserved.",
+                "copyright": "© {{year}} Ak-Er Engineering Lighting Engineering. All rights reserved.",
                 "privacyPolicy": "Privacy Policy",
                 "termsOfUse": "Terms of Use",
                 "cookiePolicy": "Cookie Policy"
@@ -184,7 +199,7 @@
             }
         },
         "navbar": {
-            "logo": "Lineo",
+            "logo": "Ak-Er Engineering",
             "brandSuffix": "Lighting",
             "navItems": {
                 "home": "Home",

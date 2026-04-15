@@ -3,7 +3,7 @@
         "about": {
             "title": "Hakkımızda",
             "subtitle": "Vizyonumuz ve misyonumuz ile aydınlatma sektöründe fark yaratıyoruz",
-            "companyName": "Lineo Aydınlatma",
+            "companyName": " Ak-Er Engineering",
             "yearsOfExperience": "20+ Yıllık Tecrübe",
             "description1": "2003 yılından bu yana aydınlatma sektöründe faaliyet gösteren firmamız, Türkiye'nin en büyük aydınlatma projelerine imza atmıştır.",
             "description2": "Uzman mühendis kadromuz ve son teknoloji ekipmanlarımızla, müşterilerimize en kaliteli hizmeti sunmayı hedefliyoruz.",
@@ -53,7 +53,7 @@
             },
             "sectionHeader": {
                 "subtitle": "Hakkımızda",
-                "title": "Lineo Aydınlatma",
+                "title": "Ak-Er Engineering",
                 "description": "Vizyonumuz ve misyonumuz ile aydınlatma sektöründe fark yaratıyoruz"
             }
         },
@@ -62,17 +62,32 @@
                 {
                     "title": "Aydınlatma Mühendisliğinde",
                     "highlightedText": "Yenilikçi Çözümler",
-                    "description": "20 yılı aşkın tecrübemizle, Türkiye'nin önde gelen aydınlatma mühendisliği firması olarak enerji verimli, çevre dostu ve estetik aydınlatma çözümleri sunuyoruz."
+                    "description": "20 yılı aşkın tecrübemizle, Türkiye'nin önde gelen aydınlatma mühendisliği şirketi olarak enerji verimli, çevre dostu ve estetik aydınlatma çözümleri sunuyoruz."
                 },
                 {
                     "title": "Elektrik Taahhüt",
                     "highlightedText": "Profesyonel Hizmetler",
-                    "description": "Modern sistemlerle mekanınızı güçlendiriyor, tasarımdan uygulamaya her aşamada yanınızda oluyoruz."
+                    "description": "Modern sistemlerle alanınızı güçlendiriyor, tasarımdan uygulamaya her aşamada yanınızda oluyoruz."
                 },
                 {
                     "title": "Akıllı Aydınlatma",
                     "highlightedText": "Otomasyon Sistemleri",
-                    "description": "DALI, DMX, KNX gibi ileri seviye otomasyon sistemleriyle enerji verimliliğini artırıyor, kullanım konforunu üst seviyeye çıkarıyoruz."
+                    "description": "DALI, DMX, KNX gibi gelişmiş otomasyon sistemleriyle enerji verimliliğini artırıyor, kullanım konforunu maksimum seviyeye çıkarıyoruz."
+                },
+                {
+                    "title": "Cephe Aydınlatması",
+                    "highlightedText": "Mimari Aydınlatma",
+                    "description": "Binaların mimari özelliklerini ön plana çıkaran, enerji verimli LED cephe aydınlatma sistemleri. Geceleri binalarınıza değer katın."
+                },
+                {
+                    "title": "Peyzaj Aydınlatması",
+                    "highlightedText": "Bahçe ve Park Aydınlatması",
+                    "description": "Bahçeler, parklar ve açık alanlar için çevre dostu LED aydınlatma çözümleri. Doğal güzelliği koruyan, enerji verimli sistemler."
+                },
+                {
+                    "title": "Endüstriyel Aydınlatma",
+                    "highlightedText": "Fabrika ve Depo Aydınlatması",
+                    "description": "Endüstriyel tesisler, fabrikalar ve depolar için profesyonel aydınlatma sistemleri. Yüksek dayanıklılık, optimum aydınlatma ve güvenlik."
                 }
             ],
             "buttons": {
@@ -135,7 +150,7 @@
         },
         "footer": {
             "companyInfo": {
-                "brandName": "Lineo",
+                "brandName": "Ak-Er Engineering",
                 "brandSuffix": "Aydınlatma",
                 "description": "Aydınlatma mühendisliğinde yenilikçi çözümler sunan Türkiye'nin önde gelen firmalarından biriyiz. 20+ yıllık tecrübemizle kalite ve güvenilirliği bir arada sunuyoruz."
             },
@@ -162,9 +177,9 @@
             },
             "contact": {
                 "title": "Bize Ulaşın",
-                "address": "İstanbul, Türkiye",
-                "phone": "+90 (212) 123 45 67",
-                "email": "info@lineo.com.tr",
+                "address": "Baku, Azerbaijan",
+                "phone": "+994 (51) 590 01 24",
+                "email": "zubeyir@ak-erengineering",
                 "hours": "Pzt - Cum: 09:00 - 18:00"
             },
             "newsletter": {
@@ -174,7 +189,7 @@
                 "successMessage": "✓ Başarıyla abone oldunuz!"
             },
             "bottom": {
-                "copyright": "© {{year}} Lineo Aydınlatma Mühendisliği. Tüm hakları saklıdır.",
+                "copyright": "© {{year}} Ak-Er Engineering Aydınlatma Mühendisliği. Tüm hakları saklıdır.",
                 "privacyPolicy": "Gizlilik Politikası",
                 "termsOfUse": "Kullanım Koşulları",
                 "cookiePolicy": "Çerez Politikası"
@@ -184,7 +199,7 @@
             }
         },
         "navbar": {
-            "logo": "Lineo",
+            "logo": "Ak-Er Engineering",
             "brandSuffix": "Aydınlatma",
             "navItems": {
                 "home": "Ana Sayfa",
