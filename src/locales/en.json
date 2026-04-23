@@ -272,10 +272,6 @@
                     "description": "Direct digital control systems for sensor and actuator management."
                 },
                 {
-                    "title": "Electrical Panel Manufacturing",
-                    "description": "Custom designed electrical distribution and control panels for industrial facilities and buildings."
-                },
-                {
                     "title": "Mechanical Drive Systems (Shaft/Mill)",
                     "description": "Shaft and drive systems manufacturing and assembly for rotational motion transmission."
                 },
@@ -564,6 +560,208 @@
                     {
                         "question": "Is this compatible with existing systems?",
                         "answer": "Yes, our open API integrates with major BMS platforms."
+                    }
+                ]
+            }
+        },
+        "technicalServiceDetails": {
+            "bms": {
+                "title": "BMS (Building Management System)",
+                "shortDescription": "Centralized control systems for HVAC, lighting, security and energy management.",
+                "fullDescription": "Building Management Systems (BMS) are intelligent control systems that monitor and control a building's mechanical and electrical equipment. Our BMS solutions integrate HVAC, lighting, power systems, fire alarms, and security systems into a single, user-friendly platform. This centralization enables facility managers to optimize energy consumption, reduce operational costs, and ensure occupant comfort. With real-time monitoring and automated control, our BMS can reduce energy bills by up to 30% while extending equipment life through predictive maintenance.",
+                "features": [
+                    "Centralized monitoring and control",
+                    "Real-time energy consumption tracking",
+                    "Automated scheduling and optimization",
+                    "Alarm and fault detection",
+                    "Remote access via web/mobile"
+                ],
+                "benefits": [
+                    "Up to 30% energy savings",
+                    "Reduced operational costs",
+                    "Extended equipment lifespan",
+                    "Improved occupant comfort",
+                    "Data-driven decision making"
+                ],
+                "technologies": [
+                    "BACnet",
+                    "Modbus",
+                    "LonWorks",
+                    "KNX",
+                    "MQTT"
+                ],
+                "applications": [
+                    "Office Buildings",
+                    "Hospitals",
+                    "Shopping Malls",
+                    "Airports",
+                    "Hotels",
+                    "Educational Facilities"
+                ],
+                "faq": [
+                    {
+                        "question": "What is the ROI period for a BMS?",
+                        "answer": "Typically 2-5 years depending on building size and energy consumption patterns."
+                    },
+                    {
+                        "question": "Can BMS integrate with existing systems?",
+                        "answer": "Yes, our BMS supports multiple protocols for seamless integration with existing equipment."
+                    }
+                ]
+            },
+            "ddc": {
+                "title": "DDC Control Devices",
+                "shortDescription": "Direct digital control systems for sensor and actuator management.",
+                "fullDescription": "Direct Digital Control (DDC) is the brain of modern building automation. Our DDC controllers process data from sensors and send precise commands to actuators, valves, and dampers. Unlike older pneumatic or analog systems, DDC provides exact control, data logging, and remote accessibility. Our programmable controllers are field-adjustable and can be customized for any HVAC, lighting, or industrial process application. With built-in PID loops and scheduling capabilities, DDC ensures optimal performance while minimizing energy waste.",
+                "features": [
+                    "Precise digital control (0.1% accuracy)",
+                    "Built-in PID control loops",
+                    "Data logging and trending",
+                    "Remote programming capabilities",
+                    "Fault detection and diagnostics"
+                ],
+                "benefits": [
+                    "Superior accuracy vs analog systems",
+                    "Lower maintenance requirements",
+                    "Energy optimization",
+                    "Easy retrofitting",
+                    "Scalable from single zone to entire building"
+                ],
+                "technologies": [
+                    "PID Control",
+                    "IoT Gateway",
+                    "Edge Computing",
+                    "Cloud Connectivity",
+                    "Open Protocols"
+                ],
+                "applications": [
+                    "HVAC Systems",
+                    "Lighting Control",
+                    "Pump Stations",
+                    "Air Handling Units",
+                    "Chiller Plants"
+                ],
+                "faq": [
+                    {
+                        "question": "What is the lifespan of DDC controllers?",
+                        "answer": "Our DDC controllers typically last 10-15 years with proper maintenance."
+                    }
+                ]
+            },
+            "mechanical-drive": {
+                "title": "Mechanical Drive Systems (Shaft/Mill)",
+                "shortDescription": "Shaft and drive systems manufacturing and assembly for rotational motion transmission.",
+                "fullDescription": "Mechanical drive systems are the backbone of industrial power transmission. We specialize in the design, manufacturing, and assembly of precision shafts, couplings, and drive components. Our systems transmit rotational power from motors to driven equipment such as pumps, fans, conveyors, and mills. Using high-grade materials and precision balancing, we ensure smooth operation with minimal vibration and energy loss. Each system is custom-engineered for specific torque, speed, and environmental requirements, ensuring maximum reliability and service life.",
+                "features": [
+                    "Precision balancing (ISO 1940 G1)",
+                    "High-grade alloy steel construction",
+                    "Custom length and diameter options",
+                    "Integrated coupling systems",
+                    "Corrosion-resistant coatings"
+                ],
+                "benefits": [
+                    "Minimal vibration and noise",
+                    "High torque transmission efficiency",
+                    "Extended bearing life",
+                    "Reduced maintenance downtime",
+                    "Custom engineered for your application"
+                ],
+                "technologies": [
+                    "Dynamic Balancing",
+                    "FEA Analysis",
+                    "Laser Alignment",
+                    "Thermal Treatment",
+                    "NDT Testing"
+                ],
+                "applications": [
+                    "Industrial Fans",
+                    "Centrifugal Pumps",
+                    "Conveyor Systems",
+                    "Rolling Mills",
+                    "Compressors"
+                ],
+                "faq": [
+                    {
+                        "question": "What materials do you use for shafts?",
+                        "answer": "We use EN8, EN24, EN19, stainless steel, and special alloys based on application requirements."
+                    }
+                ]
+            },
+            "prover": {
+                "title": "Prover / Test Devices",
+                "shortDescription": "Flow meter and sensor verification, calibration and test systems.",
+                "fullDescription": "Prover systems are critical for ensuring measurement accuracy in fluid handling applications. Our prover and test devices provide precise calibration and verification of flow meters, sensors, and measurement instruments. Using master meter and volumetric prover technologies, we help customers maintain ISO compliance and measurement integrity. Regular proving ensures that custody transfer measurements are accurate, reducing financial losses from measurement errors. Our portable and fixed prover systems serve oil & gas, water treatment, chemical, and pharmaceutical industries.",
+                "features": [
+                    "High accuracy (±0.05% uncertainty)",
+                    "Portable and fixed configurations",
+                    "Automated proving cycles",
+                    "Digital data logging",
+                    "Traceable to international standards"
+                ],
+                "benefits": [
+                    "Regulatory compliance (ISO, API)",
+                    "Reduced measurement errors",
+                    "Protection against custody transfer losses",
+                    "Extended meter life",
+                    "Documentation for audits"
+                ],
+                "technologies": [
+                    "Master Meter Proving",
+                    "Small Volume Prover",
+                    "Pipe Prover",
+                    "Ultrasonic Flow Meter",
+                    "Coriolis Meter"
+                ],
+                "applications": [
+                    "Oil & Gas Terminals",
+                    "Water Treatment Plants",
+                    "Chemical Processing",
+                    "Pharmaceutical Manufacturing",
+                    "Fuel Depots"
+                ],
+                "faq": [
+                    {
+                        "question": "How often should meters be proved?",
+                        "answer": "Typically monthly or quarterly, depending on regulatory requirements and application criticality."
+                    }
+                ]
+            },
+            "mechanical-installation": {
+                "title": "Mechanical Installation Assembly",
+                "shortDescription": "Pump, valve, pipe and mechanical equipment installation services.",
+                "fullDescription": "Professional mechanical installation is essential for system reliability and longevity. Our certified team provides complete mechanical installation services including pumps, valves, piping systems, HVAC equipment, and industrial machinery. We follow strict quality procedures, pressure testing standards, and safety protocols. From foundation preparation to final alignment and commissioning, we ensure every component is installed to manufacturer specifications and industry best practices. Our installation services cover both new construction and retrofit projects across all industrial sectors.",
+                "features": [
+                    "Certified installation team",
+                    "Full documentation and as-built drawings",
+                    "Pressure and leak testing",
+                    "Laser alignment services",
+                    "Vibration analysis"
+                ],
+                "benefits": [
+                    "Reduced installation time",
+                    "Guaranteed compliance with standards",
+                    "Lower lifecycle costs",
+                    "Minimal operational disruption",
+                    "Single point of responsibility"
+                ],
+                "technologies": [
+                    "Laser Alignment Tools",
+                    "Hydrostatic Testing",
+                    "Thermography",
+                    "Borescope Inspection",
+                    "CAD Modeling"
+                ],
+                "applications": [
+                    "Pump Stations",
+                    "HVAC Plants",
+                    "Process Piping",
+                    "Compressed Air Systems",
+                    "Chilled Water Systems"
+                ],
+                "faq": [
+                    {
+                        "question": "Do you provide warranty on installations?",
+                        "answer": "Yes, we offer a 12-month warranty on all mechanical installation work."
                     }
                 ]
             }

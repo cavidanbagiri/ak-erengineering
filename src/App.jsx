@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import ServicesPage from './pages/ServicesPage'
 import AboutPage from './pages/AboutPage'
 import ServiceDetail from './components/ServiceDetail'
+import TechnicalServiceDetail from './components/TechnicalServiceDetail'
 
 import Footer from './components/Footer'
 
@@ -19,6 +20,8 @@ function App() {
           <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/technical-services/:serviceSlug" element={<TechnicalServiceDetail />} />
+          <Route path="/technical-services" element={<ServicesPage />} />
           {/* <Route path="/technical-services/:serviceSlug" element={<TechnicalServiceDetail />} />
           <Route path="/technical-services" element={<TechnicalServicesPage />} /> */}
         </Routes>

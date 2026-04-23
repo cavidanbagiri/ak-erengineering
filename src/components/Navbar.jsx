@@ -25,28 +25,27 @@ function Navbar() {
             id: 'services',
             dropdown: true,
             items: [
-                { label: t('navbar.dropdown.facade'), path: '/services/facade-lighting' },        // DEĞİŞTİ
-                { label: t('navbar.dropdown.industrial'), path: '/services/industrial-lighting' }, // DEĞİŞTİ
-                { label: t('navbar.dropdown.landscape'), path: '/services/landscape-lighting' },   // DEĞİŞTİ
-                { label: t('navbar.dropdown.road'), path: '/services/road-lighting' },             // YENİ
-                { label: t('navbar.dropdown.energy'), path: '/services/energy-solutions' },        // YENİ
-                { label: t('navbar.dropdown.smart'), path: '/services/smart-systems' },            // AYNI (zaten vardı)
+                { label: t('navbar.dropdown.facade'), path: '/services/facade-lighting' },        
+                { label: t('navbar.dropdown.industrial'), path: '/services/industrial-lighting' }, 
+                { label: t('navbar.dropdown.landscape'), path: '/services/landscape-lighting' },   
+                { label: t('navbar.dropdown.road'), path: '/services/road-lighting' },             
+                { label: t('navbar.dropdown.energy'), path: '/services/energy-solutions' },        
+                { label: t('navbar.dropdown.smart'), path: '/services/smart-systems' },            
             ]
         },
-        // { 
-        //     label: t('navbar.navItems.technical'), // YENİ
-        //     path: '/technical-services', 
-        //     id: 'technical',
-        //     dropdown: true,
-        //     items: [
-        //         { label: t('navbar.dropdown.electricalPanel'), path: '/technical-services/electrical-panel' },
-        //         { label: t('navbar.dropdown.mechanicalDrive'), path: '/technical-services/mechanical-drive' },
-        //         { label: t('navbar.dropdown.bms'), path: '/technical-services/bms' },
-        //         { label: t('navbar.dropdown.ddc'), path: '/technical-services/ddc' },
-        //         { label: t('navbar.dropdown.prover'), path: '/technical-services/prover' },
-        //         { label: t('navbar.dropdown.mechanicalInstallation'), path: '/technical-services/mechanical-installation' },
-        //     ]
-        // },
+        { 
+            label: t('navbar.navItems.technical'),
+            path: '/technical-services', 
+            id: 'technical',
+            dropdown: true,
+            items: [
+                { label: t('navbar.dropdown.bms'), path: '/technical-services/bms' },
+                { label: t('navbar.dropdown.ddc'), path: '/technical-services/ddc' },
+                { label: t('navbar.dropdown.mechanicalDrive'), path: '/technical-services/mechanical-drive' },
+                { label: t('navbar.dropdown.prover'), path: '/technical-services/prover' },
+                { label: t('navbar.dropdown.mechanicalInstallation'), path: '/technical-services/mechanical-installation' },
+            ]
+        },
         { label: t('navbar.navItems.portfolio'), path: '/portfolio', id: 'portfolio' },
         { label: t('navbar.navItems.contact'), path: '/contact', id: 'contact' },
     ]

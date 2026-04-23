@@ -272,10 +272,6 @@
                     "description": "Sensor və aktüator idarəetməsi üçün birbaşa rəqəmsal nəzarət sistemləri."
                 },
                 {
-                    "title": "Elektrik Panosu İstehsalı",
-                    "description": "Sənaye müəssisələri və binalar üçün xüsusi dizayn edilmiş elektrik paylanması və nəzarət panelləri."
-                },
-                {
                     "title": "Mexaniki Ötürücü Sistemlər (Şaft/Mil)",
                     "description": "Fırlanma hərəkətinin ötürülməsi üçün mil və şaft sistemlərinin istehsalı və quraşdırılması."
                 },
@@ -564,6 +560,208 @@
                     {
                         "question": "Bu mövcud sistemlərlə uyğundurmu?",
                         "answer": "Bəli, açıq API-miz əsas BMS platformaları ilə inteqrasiya olunur."
+                    }
+                ]
+            }
+        },
+        "technicalServiceDetails": {
+            "bms": {
+                "title": "BMS (Bina İdarəetmə Sistemi)",
+                "shortDescription": "HVAC, işıqlandırma, təhlükəsizlik və enerji idarəsi üçün mərkəzləşdirilmiş nəzarət sistemləri.",
+                "fullDescription": "Bina İdarəetmə Sistemləri (BMS) binanın mexaniki və elektrik avadanlıqlarını izləyən və idarə edən ağıllı nəzarət sistemləridir. BMS həllərimiz HVAC, işıqlandırma, enerji sistemləri, yanğın siqnalları və təhlükəsizlik sistemlərini vahid, istifadəçi dostu platformada birləşdirir. Bu mərkəzləşdirmə obyekt menecerlərinə enerji istehlakını optimallaşdırmağa, əməliyyat xərclərini azaltmağa və bina sakinlərinin rahatlığını təmin etməyə imkan verir. Real vaxt rejimində izləmə və avtomatik idarəetmə ilə BMS-miz enerji xərclərini 30%-ə qədər azalda bilər və proqnozlaşdırıcı texniki xidmət vasitəsilə avadanlıqların ömrünü uzadır.",
+                "features": [
+                    "Mərkəzləşdirilmiş izləmə və idarəetmə",
+                    "Real vaxt enerji istehlakı izlənməsi",
+                    "Avtomatik cədvəlləşdirmə və optimallaşdırma",
+                    "Alarm və nasazlıq aşkarlanması",
+                    "Veb/mobil vasitəsilə uzaqdan giriş"
+                ],
+                "benefits": [
+                    "30%-ə qədər enerji qənaəti",
+                    "Azaldılmış əməliyyat xərcləri",
+                    "Uzadılmış avadanlıq ömrü",
+                    "Yaxşılaşdırılmış bina sakini rahatlığı",
+                    "Məlumat əsaslı qərar qəbulu"
+                ],
+                "technologies": [
+                    "BACnet",
+                    "Modbus",
+                    "LonWorks",
+                    "KNX",
+                    "MQTT"
+                ],
+                "applications": [
+                    "Ofis Binaları",
+                    "Xəstəxanalar",
+                    "Alış-veriş Mərkəzləri",
+                    "Hava Limanları",
+                    "Otellər",
+                    "Təhsil Müəssisələri"
+                ],
+                "faq": [
+                    {
+                        "question": "BMS üçün geri qayıtma müddəti nə qədərdir?",
+                        "answer": "Adətən bina ölçüsündən və enerji istehlak nümunələrindən asılı olaraq 2-5 il."
+                    },
+                    {
+                        "question": "BMS mövcud sistemlərlə inteqrasiya edə bilərmi?",
+                        "answer": "Bəli, BMS-miz mövcud avadanlıqlarla problemsiz inteqrasiya üçün çoxsaylı protokolları dəstəkləyir."
+                    }
+                ]
+            },
+            "ddc": {
+                "title": "DDC Nəzarət Cihazları",
+                "shortDescription": "Sensor və aktuator idarəsi üçün birbaşa rəqəmsal nəzarət sistemləri.",
+                "fullDescription": "Birbaşa Rəqəmsal Nəzarət (DDC) müasir bina avtomatlaşdırmasının beynidir. DDC nəzarətçilərimiz sensorlardan gələn məlumatları emal edir və aktuatorlara, klapanlara və damperlərə dəqiq əmrlər göndərir. Köhnə pnevmatik və ya analoq sistemlərdən fərqli olaraq, DDC dəqiq nəzarət, məlumatların qeydiyyatı və uzaqdan giriş imkanı verir. Proqramlaşdırıla bilən nəzarətçilərimiz sahədə tənzimlənə bilir və istənilən HVAC, işıqlandırma və ya sənaye prosesi tətbiqi üçün fərdiləşdirilə bilər. Quraşdırılmış PID döngələri və cədvəlləşdirmə qabiliyyəti ilə DDC enerji itkisini minimuma endirərkən optimal performans təmin edir.",
+                "features": [
+                    "Dəqiq rəqəmsal nəzarət (0.1% dəqiqlik)",
+                    "Quraşdırılmış PID nəzarət döngələri",
+                    "Məlumatların qeydiyyatı və trend təhlili",
+                    "Uzaqdan proqramlaşdırma imkanları",
+                    "Nasazlığın aşkarlanması və diaqnostikası"
+                ],
+                "benefits": [
+                    "Analoq sistemlərə nisbətən üstün dəqiqlik",
+                    "Daha aşağı texniki xidmət tələbləri",
+                    "Enerji optimallaşdırılması",
+                    "Asan yenilənmə (retrofitting)",
+                    "Bir zonadan bütün binaya qədər miqyaslana bilmə"
+                ],
+                "technologies": [
+                    "PID Nəzarət",
+                    "IoT Gateway",
+                    "Kənar Hesablama",
+                    "Bulud Bağlantısı",
+                    "Açıq Protokollar"
+                ],
+                "applications": [
+                    "HVAC Sistemləri",
+                    "İşıqlandırma Nəzarəti",
+                    "Nasos Stansiyaları",
+                    "Hava İdarəetmə Qurğuları",
+                    "Çiller Qurğuları"
+                ],
+                "faq": [
+                    {
+                        "question": "DDC nəzarətçilərinin ömrü nə qədərdir?",
+                        "answer": "DDC nəzarətçilərimiz düzgün texniki xidmətlə adətən 10-15 il işləyir."
+                    }
+                ]
+            },
+            "mechanical-drive": {
+                "title": "Mexaniki Ötürmə Sistemləri (Val/Dəyirman)",
+                "shortDescription": "Fırlanma hərəkətinin ötürülməsi üçün val və ötürmə sistemlərinin istehsalı və yığılması.",
+                "fullDescription": "Mexaniki ötürmə sistemləri sənaye güc ötürülməsinin onurğasıdır. Biz dəqiq vallar, muftalar və ötürmə komponentlərinin dizaynı, istehsalı və yığılması üzrə ixtisaslaşmışıq. Sistemlərimiz fırlanan gücü mühərriklərdən nasoslar, ventilyatorlar, konveyerlər və dəyirmanlar kimi ötürülən avadanlıqlara ötürür. Yüksək keyfiyyətli materiallar və dəqiq balanslaşdırmadan istifadə edərək, minimal vibrasiya və enerji itkisi ilə hamar işləmə təmin edirik. Hər bir sistem xüsusi tork, sürət və ətraf mühit tələblərinə uyğun olaraq hazırlanır, maksimum etibarlılıq və xidmət müddəti təmin edilir.",
+                "features": [
+                    "Dəqiq balanslaşdırma (ISO 1940 G1)",
+                    "Yüksək dərəcəli ərinti polad konstruksiya",
+                    "Fərdi uzunluq və diametr seçimləri",
+                    "İnteqrasiya edilmiş mufta sistemləri",
+                    "Korroziyaya davamlı örtüklər"
+                ],
+                "benefits": [
+                    "Minimal vibrasiya və səs-küy",
+                    "Yüksək tork ötürmə səmərəliliyi",
+                    "Uzadılmış yataq ömrü",
+                    "Azaldılmış texniki xidmət dayanma müddəti",
+                    "Tətbiqiniz üçün xüsusi mühəndislik"
+                ],
+                "technologies": [
+                    "Dinamik Balanslaşdırma",
+                    "FEA Analizi",
+                    "Lazer Hizalanması",
+                    "Termal Emal",
+                    "Dağıdıcı Olmayan Sınaq"
+                ],
+                "applications": [
+                    "Sənaye Ventilyatorları",
+                    "Santrifüj Nasoslar",
+                    "Konveyer Sistemləri",
+                    "Prokat Dəyirmanları",
+                    "Kompressorlar"
+                ],
+                "faq": [
+                    {
+                        "question": "Vallar üçün hansı materiallardan istifadə edirsiniz?",
+                        "answer": "Tətbiq tələblərinə əsasən EN8, EN24, EN19, paslanmayan polad və xüsusi ərintilərdən istifadə edirik."
+                    }
+                ]
+            },
+            "prover": {
+                "title": "Prover / Test Cihazları",
+                "shortDescription": "Axış ölçən və sensorların doğrulanması, kalibrasiyası və test sistemləri.",
+                "fullDescription": "Prover sistemləri maye daşıma tətbiqlərində ölçmə dəqiqliyini təmin etmək üçün vacibdir. Prover və test cihazlarımız axış ölçənlərin, sensorların və ölçü alətlərinin dəqiq kalibrasiyasını və doğrulanmasını təmin edir. Master metr və həcmi prover texnologiyalarından istifadə edərək, müştərilərimizə ISO uyğunluğunu və ölçmə bütövlüyünü qorumağa kömək edirik. Müntəzəm doğrulama, təhvil-təslim ölçmələrinin dəqiq olmasını təmin edir, ölçmə xətalarından maliyyə itkilərini azaldır. Daşınan və sabit prover sistemlərimiz neft-qaz, su təmizləmə, kimya və əczaçılıq sənayelərinə xidmət göstərir.",
+                "features": [
+                    "Yüksək dəqiqlik (±0.05% qeyri-müəyyənlik)",
+                    "Daşınan və sabit konfiqurasiyalar",
+                    "Avtomatlaşdırılmış doğrulama dövrləri",
+                    "Rəqəmsal məlumat qeydiyyatı",
+                    "Beynəlxalq standartlara izlənə bilirlik"
+                ],
+                "benefits": [
+                    "Tənzimləyici tələblərə uyğunluq (ISO, API)",
+                    "Azaldılmış ölçmə xətaları",
+                    "Təhvil-təslim itkilərinə qarşı qoruma",
+                    "Uzadılmış ölçən ömrü",
+                    "Auditlər üçün sənədləşmə"
+                ],
+                "technologies": [
+                    "Master Metr ilə Doğrulama",
+                    "Kiçik Həcmli Prover",
+                    "Boru Proveri",
+                    "Ultrasəs Axış Ölçən",
+                    "Coriolis Ölçəni"
+                ],
+                "applications": [
+                    "Neft və Qaz Terminalları",
+                    "Su Təmizləmə Zavodları",
+                    "Kimyəvi Emal",
+                    "Əczaçılıq İstehsalı",
+                    "Yanacaq Anbarları"
+                ],
+                "faq": [
+                    {
+                        "question": "Ölçənlər nə qədər tez-tez doğrulanmalıdır?",
+                        "answer": "Adətən aylıq və ya rüblük, tənzimləyici tələblərdən və tətbiqin kritikliyindən asılı olaraq."
+                    }
+                ]
+            },
+            "mechanical-installation": {
+                "title": "Mexaniki Quraşdırma və Yığılma",
+                "shortDescription": "Nasos, klapan, boru və mexaniki avadanlıq quraşdırma xidmətləri.",
+                "fullDescription": "Professional mexaniki quraşdırma sistem etibarlılığı və uzunömürlülüyü üçün vacibdir. Sertifikatlı komandamız nasoslar, klapanlar, boru sistemləri, HVAC avadanlıqları və sənaye maşınları daxil olmaqla tam mexaniki quraşdırma xidmətləri təqdim edir. Biz ciddi keyfiyyət prosedurlarına, təzyiq sınağı standartlarına və təhlükəsizlik protokollarına əməl edirik. Bünövrə hazırlığından son hizalama və istismara verilməyə qədər, hər bir komponentin istehsalçı spesifikasiyalarına və sənayenin ən yaxşı təcrübələrinə uyğun quraşdırılmasını təmin edirik. Quraşdırma xidmətlərimiz bütün sənaye sektorlarında həm yeni tikinti, həm də yeniləmə (retrofit) layihələrini əhatə edir.",
+                "features": [
+                    "Sertifikatlı quraşdırma komandası",
+                    "Tam sənədləşmə və icra çertyojları",
+                    "Təzyiq və sızma testi",
+                    "Lazer hizalama xidmətləri",
+                    "Vibrasiya analizi"
+                ],
+                "benefits": [
+                    "Azaldılmış quraşdırma müddəti",
+                    "Standartlara uyğunluq zəmanəti",
+                    "Daha aşağı yaşam dövrü xərcləri",
+                    "Minimal operativ fasilə",
+                    "Tək məsuliyyət nöqtəsi"
+                ],
+                "technologies": [
+                    "Lazer Hizalama Alətləri",
+                    "Hidrostatik Sınaq",
+                    "Termoqrafiya",
+                    "Boreskop Müayinəsi",
+                    "CAD Modelləşdirmə"
+                ],
+                "applications": [
+                    "Nasos Stansiyaları",
+                    "HVAC Qurğuları",
+                    "Proses Boru Kəmərləri",
+                    "Sıxılmış Hava Sistemləri",
+                    "Soyudulmuş Su Sistemləri"
+                ],
+                "faq": [
+                    {
+                        "question": "Quraşdırmalara zəmanət verirsinizmi?",
+                        "answer": "Bəli, bütün mexaniki quraşdırma işlərinə 12 ay zəmanət təqdim edirik."
                     }
                 ]
             }

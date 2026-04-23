@@ -272,10 +272,6 @@
                     "description": "Sensör ve aktüatör yönetimi için doğrudan dijital kontrol sistemleri."
                 },
                 {
-                    "title": "Elektrik Panosu İmalatı",
-                    "description": "Endüstriyel tesisler ve binalar için özel tasarım elektrik dağıtım ve kontrol panoları."
-                },
-                {
                     "title": "Mekanik Tahrik Sistemleri (Şaft/Mil)",
                     "description": "Dönme hareketi aktarımı için mil ve şaft sistemleri imalatı ve montajı."
                 },
@@ -564,6 +560,208 @@
                     {
                         "question": "Bu mevcut sistemlerle uyumlu mu?",
                         "answer": "Evet, açık API'miz büyük BMS platformlarıyla entegre olur."
+                    }
+                ]
+            }
+        },
+        "technicalServiceDetails": {
+            "bms": {
+                "title": "BMS (Bina Yönetim Sistemi)",
+                "shortDescription": "HVAC, aydınlatma, güvenlik ve enerji yönetimi için merkezi kontrol sistemleri.",
+                "fullDescription": "Bina Yönetim Sistemleri (BMS), bir binanın mekanik ve elektrik ekipmanlarını izleyen ve kontrol eden akıllı kontrol sistemleridir. BMS çözümlerimiz, HVAC, aydınlatma, güç sistemleri, yangın alarmları ve güvenlik sistemlerini tek, kullanıcı dostu bir platformda birleştirir. Bu merkezileştirme, tesis yöneticilerinin enerji tüketimini optimize etmesine, işletme maliyetlerini düşürmesine ve bina sakinlerinin konforunu sağlamasına olanak tanır. Gerçek zamanlı izleme ve otomatik kontrol ile BMS'miz, enerji faturalarını %30'a kadar azaltabilir ve öngörücü bakım sayesinde ekipman ömrünü uzatabilir.",
+                "features": [
+                    "Merkezi izleme ve kontrol",
+                    "Gerçek zamanlı enerji tüketimi takibi",
+                    "Otomatik planlama ve optimizasyon",
+                    "Alarm ve arıza tespiti",
+                    "Web/mobil üzerinden uzaktan erişim"
+                ],
+                "benefits": [
+                    "%30'a kadar enerji tasarrufu",
+                    "Azaltılmış işletme maliyetleri",
+                    "Uzatılmış ekipman ömrü",
+                    "İyileştirilmiş bina sakini konforu",
+                    "Veri odaklı karar verme"
+                ],
+                "technologies": [
+                    "BACnet",
+                    "Modbus",
+                    "LonWorks",
+                    "KNX",
+                    "MQTT"
+                ],
+                "applications": [
+                    "Ofis Binaları",
+                    "Hastaneler",
+                    "Alışveriş Merkezleri",
+                    "Havalimanları",
+                    "Oteller",
+                    "Eğitim Tesisleri"
+                ],
+                "faq": [
+                    {
+                        "question": "Bir BMS için geri dönüş süresi nedir?",
+                        "answer": "Tipik olarak bina büyüklüğüne ve enerji tüketim şekline bağlı olarak 2-5 yıl."
+                    },
+                    {
+                        "question": "BMS mevcut sistemlerle entegre olabilir mi?",
+                        "answer": "Evet, BMS'miz mevcut ekipmanlarla sorunsuz entegrasyon için birden fazla protokolü destekler."
+                    }
+                ]
+            },
+            "ddc": {
+                "title": "DDC Kontrol Cihazları",
+                "shortDescription": "Sensör ve aktüatör yönetimi için doğrudan dijital kontrol sistemleri.",
+                "fullDescription": "Doğrudan Dijital Kontrol (DDC), modern bina otomasyonunun beynidir. DDC denetleyicilerimiz, sensörlerden gelen verileri işler ve aktüatörlere, vanalara ve damperlere hassas komutlar gönderir. Eski pnömatik veya analog sistemlerin aksine, DDC kesin kontrol, veri kaydı ve uzaktan erişilebilirlik sağlar. Programlanabilir denetleyicilerimiz sahada ayarlanabilir ve her türlü HVAC, aydınlatma veya endüstriyel proses uygulaması için özelleştirilebilir. Yerleşik PID döngüleri ve planlama yetenekleri ile DDC, enerji israfını en aza indirirken optimum performans sağlar.",
+                "features": [
+                    "Hassas dijital kontrol (%0.1 doğruluk)",
+                    "Yerleşik PID kontrol döngüleri",
+                    "Veri kaydı ve eğilim analizi",
+                    "Uzaktan programlama yetenekleri",
+                    "Arıza tespiti ve teşhisi"
+                ],
+                "benefits": [
+                    "Analog sistemlere göre üstün doğruluk",
+                    "Daha düşük bakım gereksinimleri",
+                    "Enerji optimizasyonu",
+                    "Kolay retrofitting",
+                    "Tek bölgeden tüm binaya ölçeklenebilirlik"
+                ],
+                "technologies": [
+                    "PID Kontrol",
+                    "IoT Ağ Geçidi",
+                    "Kenar Bilişim",
+                    "Bulut Bağlantısı",
+                    "Açık Protokoller"
+                ],
+                "applications": [
+                    "HVAC Sistemleri",
+                    "Aydınlatma Kontrolü",
+                    "Pompa İstasyonları",
+                    "Hava İşlem Üniteleri",
+                    "Soğutma Grubu Tesisleri"
+                ],
+                "faq": [
+                    {
+                        "question": "DDC denetleyicilerinin ömrü nedir?",
+                        "answer": "DDC denetleyicilerimiz uygun bakım ile tipik olarak 10-15 yıl dayanır."
+                    }
+                ]
+            },
+            "mechanical-drive": {
+                "title": "Mekanik Tahrik Sistemleri (Şaft/Degirmen)",
+                "shortDescription": "Dönme hareketi iletimi için şaft ve tahrik sistemleri imalatı ve montajı.",
+                "fullDescription": "Mekanik tahrik sistemleri, endüstriyel güç aktarımının bel kemiğidir. Hassas şaftlar, kaplinler ve tahrik bileşenlerinin tasarımı, imalatı ve montajında uzmanlaştık. Sistemlerimiz, döner gücü motorlardan pompalar, fanlar, konveyörler ve değirmenler gibi tahrikli ekipmanlara iletir. Yüksek kaliteli malzemeler ve hassas balans ayarı kullanarak, minimum titreşim ve enerji kaybıyla sorunsuz çalışma sağlıyoruz. Her sistem, belirli tork, hız ve çevre gereksinimlerine göre özel olarak tasarlanarak maksimum güvenilirlik ve hizmet ömrü sağlanır.",
+                "features": [
+                    "Hassas balans ayarı (ISO 1940 G1)",
+                    "Yüksek kaliteli alaşımlı çelik konstrüksiyon",
+                    "Özel uzunluk ve çap seçenekleri",
+                    "Entegre kaplin sistemleri",
+                    "Korozyona dayanıklı kaplamalar"
+                ],
+                "benefits": [
+                    "Minimum titreşim ve gürültü",
+                    "Yüksek tork iletim verimliliği",
+                    "Uzatılmış yatak ömrü",
+                    "Azaltılmış bakım duruş süresi",
+                    "Uygulamanız için özel olarak tasarlanmıştır"
+                ],
+                "technologies": [
+                    "Dinamik Balans Ayarlama",
+                    "FEA Analizi",
+                    "Lazer Hizalama",
+                    "Isıl İşlem",
+                    "Tahribatsız Muayene"
+                ],
+                "applications": [
+                    "Endüstriyel Fanlar",
+                    "Santrifüj Pompalar",
+                    "Konveyör Sistemleri",
+                    "Haddehaneler",
+                    "Kompresörler"
+                ],
+                "faq": [
+                    {
+                        "question": "Şaftlar için hangi malzemeleri kullanıyorsunuz?",
+                        "answer": "Uygulama gereksinimlerine bağlı olarak EN8, EN24, EN19, paslanmaz çelik ve özel alaşımlar kullanıyoruz."
+                    }
+                ]
+            },
+            "prover": {
+                "title": "Prover / Test Cihazları",
+                "shortDescription": "Akış ölçer ve sensör doğrulama, kalibrasyon ve test sistemleri.",
+                "fullDescription": "Prover sistemleri, akışkan taşıma uygulamalarında ölçüm doğruluğunu sağlamak için kritik öneme sahiptir. Prover ve test cihazlarımız, akış ölçerlerin, sensörlerin ve ölçüm aletlerinin hassas kalibrasyonunu ve doğrulamasını sağlar. Master metre ve hacimsel prover teknolojilerini kullanarak müşterilerimizin ISO uyumluluğunu ve ölçüm bütünlüğünü korumasına yardımcı oluyoruz. Düzenli doğrulama, devir teslim ölçümlerinin doğru olmasını sağlayarak ölçüm hatalarından kaynaklanan finansal kayıpları azaltır. Taşınabilir ve sabit prover sistemlerimiz petrol ve gaz, su arıtma, kimya ve ilaç endüstrilerine hizmet vermektedir.",
+                "features": [
+                    "Yüksek doğruluk (±%0.05 belirsizlik)",
+                    "Taşınabilir ve sabit konfigürasyonlar",
+                    "Otomatik doğrulama döngüleri",
+                    "Dijital veri kaydı",
+                    "Uluslararası standartlara izlenebilirlik"
+                ],
+                "benefits": [
+                    "Mevzuat uyumluluğu (ISO, API)",
+                    "Azaltılmış ölçüm hataları",
+                    "Devir teslim kayıplarına karşı koruma",
+                    "Uzatılmış ölçer ömrü",
+                    "Denetimler için dokümantasyon"
+                ],
+                "technologies": [
+                    "Master Metre ile Doğrulama",
+                    "Küçük Hacimli Prover",
+                    "Boru Prover'ı",
+                    "Ultrasonik Akış Ölçer",
+                    "Coriolis Metre"
+                ],
+                "applications": [
+                    "Petrol ve Gaz Terminalleri",
+                    "Su Arıtma Tesisleri",
+                    "Kimyasal Proses",
+                    "İlaç Üretimi",
+                    "Yakıt Depoları"
+                ],
+                "faq": [
+                    {
+                        "question": "Ölçerler ne sıklıkla doğrulanmalıdır?",
+                        "answer": "Tipik olarak aylık veya üç aylık, mevzuat gereksinimlerine ve uygulama kritikliğine bağlı olarak."
+                    }
+                ]
+            },
+            "mechanical-installation": {
+                "title": "Mekanik Montaj ve Assembly",
+                "shortDescription": "Pompa, vana, boru ve mekanik ekipman kurulum hizmetleri.",
+                "fullDescription": "Profesyonel mekanik montaj, sistem güvenilirliği ve uzun ömür için esastır. Sertifikalı ekibimiz, pompalar, vanalar, boru sistemleri, HVAC ekipmanları ve endüstriyel makineler dahil olmak üzere eksiksiz mekanik montaj hizmetleri sunmaktadır. Katı kalite prosedürlerini, basınç testi standartlarını ve güvenlik protokollerini takip ediyoruz. Temel hazırlığından son hizalama ve devreye almaya kadar, her bileşenin üretici spesifikasyonlarına ve endüstrinin en iyi uygulamalarına göre monte edilmesini sağlıyoruz. Montaj hizmetlerimiz, tüm endüstriyel sektörlerde hem yeni inşaat hem de retrofit projelerini kapsamaktadır.",
+                "features": [
+                    "Sertifikalı montaj ekibi",
+                    "Tam dokümantasyon ve uygulama çizimleri",
+                    "Basınç ve sızıntı testi",
+                    "Lazer hizalama hizmetleri",
+                    "Titreşim analizi"
+                ],
+                "benefits": [
+                    "Azaltılmış montaj süresi",
+                    "Standartlara uygunluk garantisi",
+                    "Daha düşük yaşam döngüsü maliyetleri",
+                    "Minimal operasyonel kesinti",
+                    "Tek sorumluluk noktası"
+                ],
+                "technologies": [
+                    "Lazer Hizalama Araçları",
+                    "Hidrostatik Test",
+                    "Termografi",
+                    "Boreskop Muayenesi",
+                    "CAD Modelleme"
+                ],
+                "applications": [
+                    "Pompa İstasyonları",
+                    "HVAC Tesisleri",
+                    "Proses Borulaması",
+                    "Basınçlı Hava Sistemleri",
+                    "Soğutulmuş Su Sistemleri"
+                ],
+                "faq": [
+                    {
+                        "question": "Montajlar için garanti veriyor musunuz?",
+                        "answer": "Evet, tüm mekanik montaj işleri için 12 ay garanti sunuyoruz."
                     }
                 ]
             }
