@@ -264,20 +264,20 @@
             },
             "list": [
                 {
-                    "title": "Electrical Panel Manufacturing",
-                    "description": "Custom designed electrical distribution and control panels for industrial facilities and buildings."
-                },
-                {
-                    "title": "Mechanical Drive Systems (Shaft/Mill)",
-                    "description": "Shaft and drive systems manufacturing and assembly for rotational motion transmission."
-                },
-                {
                     "title": "BMS (Building Management System)",
                     "description": "Centralized control systems for HVAC, lighting, security and energy management."
                 },
                 {
                     "title": "DDC Control Devices",
                     "description": "Direct digital control systems for sensor and actuator management."
+                },
+                {
+                    "title": "Electrical Panel Manufacturing",
+                    "description": "Custom designed electrical distribution and control panels for industrial facilities and buildings."
+                },
+                {
+                    "title": "Mechanical Drive Systems (Shaft/Mill)",
+                    "description": "Shaft and drive systems manufacturing and assembly for rotational motion transmission."
                 },
                 {
                     "title": "Prover / Test Devices",

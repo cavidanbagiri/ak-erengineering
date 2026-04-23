@@ -264,20 +264,20 @@
             },
             "list": [
                 {
-                    "title": "Elektrik Panosu İstehsalı",
-                    "description": "Sənaye müəssisələri və binalar üçün xüsusi dizayn edilmiş elektrik paylanması və nəzarət panelləri."
-                },
-                {
-                    "title": "Mexaniki Ötürücü Sistemlər (Şaft/Mil)",
-                    "description": "Fırlanma hərəkətinin ötürülməsi üçün mil və şaft sistemlərinin istehsalı və quraşdırılması."
-                },
-                {
                     "title": "BMS (Bina İdarəetmə Sistemi)",
                     "description": "HVAC, işıqlandırma, təhlükəsizlik və enerji idarəetməsi üçün mərkəzləşdirilmiş nəzarət sistemləri."
                 },
                 {
                     "title": "DDC Nəzarət Cihazları",
                     "description": "Sensor və aktüator idarəetməsi üçün birbaşa rəqəmsal nəzarət sistemləri."
+                },
+                {
+                    "title": "Elektrik Panosu İstehsalı",
+                    "description": "Sənaye müəssisələri və binalar üçün xüsusi dizayn edilmiş elektrik paylanması və nəzarət panelləri."
+                },
+                {
+                    "title": "Mexaniki Ötürücü Sistemlər (Şaft/Mil)",
+                    "description": "Fırlanma hərəkətinin ötürülməsi üçün mil və şaft sistemlərinin istehsalı və quraşdırılması."
                 },
                 {
                     "title": "Prover / Test Cihazları",

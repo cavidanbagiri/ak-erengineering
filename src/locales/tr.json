@@ -264,20 +264,20 @@
             },
             "list": [
                 {
-                    "title": "Elektrik Panosu İmalatı",
-                    "description": "Endüstriyel tesisler ve binalar için özel tasarım elektrik dağıtım ve kontrol panoları."
-                },
-                {
-                    "title": "Mekanik Tahrik Sistemleri (Şaft/Mil)",
-                    "description": "Dönme hareketi aktarımı için mil ve şaft sistemleri imalatı ve montajı."
-                },
-                {
                     "title": "BMS (Bina Yönetim Sistemi)",
                     "description": "HVAC, aydınlatma, güvenlik ve enerji yönetimini tek merkezden kontrol eden sistemler."
                 },
                 {
                     "title": "DDC Kontrol Cihazları",
                     "description": "Sensör ve aktüatör yönetimi için doğrudan dijital kontrol sistemleri."
+                },
+                {
+                    "title": "Elektrik Panosu İmalatı",
+                    "description": "Endüstriyel tesisler ve binalar için özel tasarım elektrik dağıtım ve kontrol panoları."
+                },
+                {
+                    "title": "Mekanik Tahrik Sistemleri (Şaft/Mil)",
+                    "description": "Dönme hareketi aktarımı için mil ve şaft sistemleri imalatı ve montajı."
                 },
                 {
                     "title": "Prover / Test Cihazları",
