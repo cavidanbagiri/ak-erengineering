@@ -9,6 +9,8 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import photo1 from '../assets/images/photo_1.webp'
 import photo2 from '../assets/images/photo_2.jpg'
 import photo3 from '../assets/images/photo_1.webp'
+import photo4 from '../assets/images/photo_4.avif'
+import photo5 from '../assets/images/photo_5.jpg'
 
 function CarouselAdvanced() {
     const { t } = useTranslation()
@@ -24,7 +26,7 @@ function CarouselAdvanced() {
     // Map imported images to slides
     const slides = slidesData.map((slide, index) => ({
         ...slide,
-        image: [photo1, photo2, photo3][index] || photo1
+        image: [photo4, photo1, photo2, photo5][index] || photo1
     }));
 
     // If slides array is empty, provide fallback (prevents errors)
