@@ -9,7 +9,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import photo1 from '../assets/images/photo_1.webp'
 import photo2 from '../assets/images/photo_2.jpg'
 import photo3 from '../assets/images/photo_1.webp'
-import photo4 from '../assets/images/photo_4.avif'
+import photo4 from '../assets/images/photo_4.jpg'
 import photo5 from '../assets/images/photo_5.jpg'
 
 function CarouselAdvanced() {
