@@ -11,6 +11,8 @@ import photo2 from '../assets/images/photo_2.jpg'
 import photo3 from '../assets/images/photo_1.webp'
 import photo4 from '../assets/images/photo_4.jpg'
 import photo5 from '../assets/images/photo_5.jpg'
+import photo6 from '../assets/images/photo_6.webp'
+import photo7 from '../assets/images/photo_7.jpg'
 
 function CarouselAdvanced() {
     const { t } = useTranslation()
@@ -26,7 +28,7 @@ function CarouselAdvanced() {
     // Map imported images to slides
     const slides = slidesData.map((slide, index) => ({
         ...slide,
-        image: [photo4, photo1, photo2, photo5][index] || photo1
+        image: [photo7, photo6, photo4, photo1, photo2, photo5][index] || photo1
     }));
 
     // If slides array is empty, provide fallback (prevents errors)
